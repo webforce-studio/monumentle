@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect } from 'react'
 import Script from 'next/script'
 
 declare global {
@@ -15,50 +14,43 @@ interface GoogleAnalyticsProps {
 }
 
 export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
-  useEffect(() => {
-    // Initialize Consent Mode v2 with default denied state
-    if (typeof window !== 'undefined') {
-      window.dataLayer = window.dataLayer || []
-      window.gtag = function gtag() {
-        window.dataLayer.push(arguments)
-      }
-      
-      // Set default consent state (denied) before GA loads
-      window.gtag('consent', 'default', {
-        analytics_storage: 'denied',
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        functionality_storage: 'denied',
-        personalization_storage: 'denied',
-        wait_for_update: 500, // Wait 500ms for consent management platform
-      })
-
-      // Initialize GA4
-      window.gtag('js', new Date())
-      window.gtag('config', measurementId, {
-        // Enhanced measurement settings
-        enhanced_measurements: {
-          scrolls: true,
-          outbound_clicks: true,
-          site_search: true,
-          video_engagement: true,
-          file_downloads: true,
-        },
-        // Privacy settings
-        anonymize_ip: true,
-        allow_google_signals: false, // Will be enabled only with consent
-        allow_ad_personalization_signals: false, // Will be enabled only with consent
-      })
-    }
-  }, [measurementId])
-
   return (
     <>
-      {/* Google Tag Manager / GA4 Script */}
+      {/* Google tag (gtag.js) - Exact format from Google Analytics */}
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+      />
+      
+      {/* Google Analytics Initialization - Standard Format */}
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            // Initialize Consent Mode v2 BEFORE config
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              functionality_storage: 'denied',
+              personalization_storage: 'denied',
+              wait_for_update: 500
+            });
+
+            // Configure Google Analytics
+            gtag('config', '${measurementId}', {
+              anonymize_ip: true,
+              allow_google_signals: false,
+              allow_ad_personalization_signals: false
+            });
+          `,
+        }}
       />
       
       {/* Custom event tracking helpers */}
