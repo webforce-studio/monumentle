@@ -14,8 +14,17 @@ import { Input } from "@/components/ui/input"
 import { StructuredData } from "@/components/structured-data"
 import { XIcon } from "@/components/x-icon"
 import { getMonuments, getTodaysMonument, calculateDistance, type MonumentData } from "@/lib/data"
-import type { GameStats } from "@/lib/types"
+// Game statistics interface
+interface GameStats {
+  gamesPlayed: number
+  gamesWon: number
+  currentStreak: number
+  maxStreak: number
+  guessDistribution: { [key: number]: number }
+  lastPlayedDate?: string
+}
 import { MonumentAttribution } from "@/components/monument-attribution"
+import { GoogleAdsPlaceholder } from "@/components/google-ads-placeholder"
 
 const STREAK_MILESTONES = [
   {
@@ -658,6 +667,9 @@ Play at: ${url}`)
         showHowToPlay={showHowToPlay}
         setShowHowToPlay={setShowHowToPlay}
       />
+
+      {/* Google Ads Placeholder - Replace with actual AdSense code */}
+      <GoogleAdsPlaceholder darkMode={darkMode} size="leaderboard" />
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-8">
