@@ -1,0 +1,18 @@
+# Monumentle Robots.txt
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Allow: /geography-quiz
+Allow: /famous-landmarks
+Allow: /learn-geography
+
+# Disallow admin and internal pages
+Disallow: /monument-overview
+Disallow: /admin
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://monumentle.fun/sitemap.xml
