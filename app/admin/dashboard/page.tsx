@@ -775,9 +775,15 @@ export default function AdminDashboard() {
                               }
                               alt={monument.name}
                               className="w-full h-full object-cover"
+                              style={{ objectPosition: 'center' }}
                               onError={(e) => {
                                 const target = e.target as HTMLImageElement
+                                console.log(`❌ Image failed to load for ${monument.name}:`, target.src)
                                 target.src = `/placeholder.svg?height=96&width=96&query=${encodeURIComponent(monument.name)}`
+                              }}
+                              onLoad={(e) => {
+                                // Debug: log successful image loads
+                                console.log(`✅ Image loaded for ${monument.name}:`, (e.target as HTMLImageElement).src)
                               }}
                             />
                           </div>
