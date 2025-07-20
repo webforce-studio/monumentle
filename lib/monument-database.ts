@@ -5354,3 +5354,8 @@ export const monuments: Monument[] = [
 // Export additional utilities
 export const MONUMENTS_DATABASE = monuments
 export default monuments
+
+// Helper function to get monument by ID
+export function getMonumentById(id: number): Monument | undefined {
+  return monuments.find(monument => monument.id === id)
+}
