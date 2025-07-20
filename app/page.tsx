@@ -667,26 +667,6 @@ Play at: ${url}`)
         setShowHowToPlay={setShowHowToPlay}
       />
 
-      {/* Game Hub Button */}
-      <div className="max-w-4xl mx-auto px-4 py-4">
-        <div className="flex justify-center">
-          <a
-            href="https://www.daily-challenge.fun"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 ${
-              darkMode
-                ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg hover:shadow-xl"
-                : "bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-md hover:shadow-lg"
-            }`}
-          >
-            <span className="text-lg">🎮</span>
-            <span>Discover More Daily Challenges</span>
-            <span className="text-sm opacity-80">→</span>
-          </a>
-        </div>
-      </div>
-
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="grid lg:grid-cols-[1fr_300px] gap-8">
@@ -1170,6 +1150,26 @@ Play at: ${url}`)
                 )}
               </CardContent>
             </Card>
+
+            {/* Game Hub Button - Between Stats and Achievements */}
+            <div className="flex justify-center py-4">
+              <a
+                href="https://www.daily-challenge.fun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-lg ${
+                  darkMode
+                    ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:shadow-xl"
+                    : "bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:shadow-lg"
+                }`}
+              >
+                <span className="text-2xl">🎮</span>
+                <div className="text-center">
+                  <div className="text-lg font-bold">Discover More Daily Challenges</div>
+                </div>
+                <span className="text-lg opacity-80">→</span>
+              </a>
+            </div>
 
             {/* Earned Badges */}
             <Card
