@@ -4,6 +4,7 @@ import "./globals.css"
 import { Providers } from "./providers"
 import { Footer } from "@/components/footer"
 import { AdvancedCookieConsent, SimpleCookieConsent } from "@/components/cookie-consent"
+import { GoogleAdSenseAuto } from "@/components/google-adsense-auto"
 
 export const metadata: Metadata = {
   title: "Monumentle - Daily Monument Guessing Game | Test Your Cultural Knowledge",
@@ -413,6 +414,9 @@ export default function RootLayout({
           
           {/* Option 2: Advanced Cookie Consent (recommended) */}
           <AdvancedCookieConsent />
+          
+          {/* Google AdSense Auto Ads */}
+          <GoogleAdSenseAuto />
         </Providers>
         <Footer />
       </body>
