@@ -24,7 +24,6 @@ interface GameStats {
   lastPlayedDate?: string
 }
 import { MonumentAttribution } from "@/components/monument-attribution"
-import { GoogleAdsPlaceholder } from "@/components/google-ads-placeholder"
 
 const STREAK_MILESTONES = [
   {
@@ -667,9 +666,6 @@ Play at: ${url}`)
         showHowToPlay={showHowToPlay}
         setShowHowToPlay={setShowHowToPlay}
       />
-
-      {/* Google Ads Placeholder - Replace with actual AdSense code */}
-      <GoogleAdsPlaceholder darkMode={darkMode} size="leaderboard" />
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-8">
