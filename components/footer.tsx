@@ -49,6 +49,16 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
+                  href="https://www.daily-challenge.fun"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-400 transition-colors font-medium"
+                >
+                  Daily Challenge Hub 🎮
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.supercardle.fun"
                   target="_blank"
                   rel="noopener noreferrer"
