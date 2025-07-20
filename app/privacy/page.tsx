@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function PrivacyPage() {
   const [darkMode, setDarkMode] = useState(false)
@@ -206,10 +207,21 @@ export default function PrivacyPage() {
                 </CardContent>
               </Card>
             </div>
+            
+            {/* Call to Action */}
+            <div className="text-center bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg p-8 text-white shadow-lg mt-12">
+              <h2 className="text-3xl font-bold mb-4">Ready to Play Monumentle?</h2>
+              <p className="text-xl mb-6 opacity-90">
+                Your privacy is important to us. Start playing our secure, privacy-focused monument game today!
+              </p>
+              <Link href="/">
+                <Button className="bg-white text-amber-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+                  Start Playing Today
+                </Button>
+              </Link>
+            </div>
           </div>
         </main>
-
-        <Footer />
       </div>
     </div>
   )

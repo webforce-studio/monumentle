@@ -643,8 +643,8 @@ export default function RootLayout({
           
           {/* Google AdSense Auto Ads */}
           <GoogleAdSenseAuto />
+          <Footer />
         </Providers>
-        <Footer />
       </body>
     </html>
   )
