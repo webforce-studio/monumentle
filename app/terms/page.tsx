@@ -39,7 +39,7 @@ export default function TermsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Terms of Service</h1>
-              <p className="text-lg text-gray-600 dark:text-gray-300">Last updated: December 2024</p>
+              <p className="text-lg text-gray-600 dark:text-gray-300">Last updated: January 2025</p>
             </div>
 
             <div className="space-y-8">
@@ -66,10 +66,12 @@ export default function TermsPage() {
                     and landmarks. The service includes:
                   </p>
                   <ul>
-                    <li>Daily monument guessing challenges</li>
-                    <li>Educational content about world heritage sites</li>
-                    <li>Geography quizzes and learning materials</li>
+                    <li>Daily monument guessing challenges with 150+ world landmarks</li>
+                    <li>Educational content about world heritage sites and cultural geography</li>
+                    <li>Interactive geography quizzes and learning materials</li>
                     <li>Progress tracking and statistics</li>
+                    <li>Contact form for support and feedback</li>
+                    <li>Accessibility features for inclusive learning</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -192,8 +194,9 @@ export default function TermsPage() {
                 <CardContent className="prose dark:prose-invert max-w-none">
                   <p>If you have any questions about these Terms of Service, please contact us:</p>
                   <ul>
-                    <li>Email: hello@monumentle.fun</li>
-                    <li>Website: www.monumentle.fun</li>
+                    <li>Email: contact@webforce-studio.com</li>
+                    <li>Website: monumentle.fun</li>
+                    <li>Response Time: We typically respond to legal inquiries within 48 hours</li>
                   </ul>
                 </CardContent>
               </Card>

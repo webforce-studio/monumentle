@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Privacy Policy</h1>
-              <p className="text-lg text-gray-600 dark:text-gray-300">Last updated: December 2024</p>
+              <p className="text-lg text-gray-600 dark:text-gray-300">Last updated: January 2025</p>
             </div>
 
             <div className="space-y-8">
@@ -59,11 +59,16 @@ export default function PrivacyPage() {
                     </li>
                     <li>
                       <strong>Usage Analytics:</strong> We may collect anonymous usage data to understand how players
-                      interact with the game and improve the experience.
+                      interact with the game and improve the experience. This includes page views, game interactions, and performance metrics.
                     </li>
                     <li>
-                      <strong>Technical Information:</strong> Basic technical information like browser type and device
-                      information may be collected for optimization purposes.
+                      <strong>Technical Information:</strong> Basic technical information like browser type, device information, and IP address may be collected for optimization and security purposes.
+                    </li>
+                    <li>
+                      <strong>Contact Form Data:</strong> When you submit our contact form, we collect your name, email address, subject, and message to respond to your inquiry. This data is processed securely and not shared with third parties.
+                    </li>
+                    <li>
+                      <strong>Cookies and Tracking:</strong> We use essential cookies for functionality and may use analytics cookies to improve our service. You can control cookie settings through your browser preferences.
                     </li>
                   </ul>
                 </CardContent>
@@ -147,8 +152,16 @@ export default function PrivacyPage() {
                       collection.
                     </li>
                     <li>
-                      <strong>Contact Us:</strong> If you have questions about your data, contact us at
-                      hello@monumentle.fun.
+                      <strong>Data Access:</strong> You can request access to any personal data we hold about you.
+                    </li>
+                    <li>
+                      <strong>Data Correction:</strong> You can request correction of inaccurate personal data.
+                    </li>
+                    <li>
+                      <strong>Data Deletion:</strong> You can request deletion of your personal data, subject to legal requirements.
+                    </li>
+                    <li>
+                      <strong>Contact Us:</strong> If you have questions about your data, contact us at our support email.
                     </li>
                   </ul>
                 </CardContent>
@@ -186,8 +199,9 @@ export default function PrivacyPage() {
                 <CardContent className="prose dark:prose-invert max-w-none">
                   <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
                   <ul>
-                    <li>Email: hello@monumentle.fun</li>
-                    <li>Website: www.monumentle.fun</li>
+                    <li>Email: contact@webforce-studio.com</li>
+                    <li>Website: monumentle.fun</li>
+                    <li>Response Time: We typically respond to privacy inquiries within 48 hours</li>
                   </ul>
                 </CardContent>
               </Card>
