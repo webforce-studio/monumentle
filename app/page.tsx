@@ -23,7 +23,7 @@ interface GameStats {
   guessDistribution: { [key: number]: number }
   lastPlayedDate?: string
 }
-import { MonumentAttribution } from "@/components/monument-attribution"
+
 
 const STREAK_MILESTONES = [
   {
@@ -737,19 +737,7 @@ Play at: ${url}`)
                         </Badge>
                       </div>
 
-                      {/* Attribution using proper component */}
-                      {gameOver && (currentMonument.photographer || currentMonument.imageSource) && (
-                        <div className="absolute bottom-2 right-2 text-right">
-                          <div className="text-xs backdrop-blur-sm px-2 py-1 rounded">
-                            <MonumentAttribution
-                              photographer={currentMonument.photographer || "Unknown Photographer"}
-                              photographerUrl={currentMonument.photographerUrl || "#"}
-                              imageSource={currentMonument.imageSource || "Unknown"}
-                              className="text-white/80"
-                            />
-                          </div>
-                        </div>
-                      )}
+
                     </div>
                   )}
                 </div>
