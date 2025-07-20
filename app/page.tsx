@@ -1239,7 +1239,7 @@ Play at: ${url}`)
                 Frequently Asked Questions
               </h2>
               <p className={`mt-2 ${darkMode ? "text-slate-400" : "text-slate-600"}`}>
-                Everything you need to know about our world geography quiz and monument guessing game
+                Everything you need to know about our interactive world geography quiz and landmark identification game
               </p>
             </div>
 
@@ -1250,12 +1250,12 @@ Play at: ${url}`)
                   <span className="text-xl">🌍</span>
                   <div>
                     <h3 className="font-semibold text-amber-500 monument-heading">
-                      How does the world geography quiz work?
+                      How does the interactive geography quiz work?
                     </h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      Monumentle is an interactive geography quiz where you identify famous world landmarks from
-                      partially revealed images. You have 6 attempts to guess the correct monument name, with each wrong
-                      guess revealing more of the image and providing distance hints to help you learn global geography.
+                      Monumentle is a modern geography learning game where you identify famous world landmarks from
+                      progressively revealed images. You have 6 attempts to guess the correct monument name, with each wrong
+                      guess revealing more of the image and providing distance hints to help you master global geography and spatial awareness.
                     </p>
                   </div>
                 </div>
@@ -1267,12 +1267,12 @@ Play at: ${url}`)
                   <span className="text-xl">📚</span>
                   <div>
                     <h3 className="font-semibold text-green-500 monument-heading">
-                      What geography skills will I learn?
+                      What geography skills will I develop?
                     </h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      Our monument quiz teaches world map knowledge, cultural geography, landmark locations, distance
+                      Our interactive geography game teaches world map knowledge, cultural geography, landmark locations, distance
                       estimation, and continental awareness. You'll master famous landmarks from all 7 continents while
-                      learning about architectural styles and historical periods.
+                      learning about architectural styles, historical periods, and global cultural heritage.
                     </p>
                   </div>
                 </div>
@@ -1284,12 +1284,12 @@ Play at: ${url}`)
                   <span className="text-xl">🎓</span>
                   <div>
                     <h3 className="font-semibold text-blue-500 monument-heading">
-                      Is this suitable for geography education?
+                      Is this suitable for modern geography education?
                     </h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       Monumentle is perfect for students, teachers, and anyone interested in world geography. It
-                      combines visual learning with cultural education, making it ideal for geography classes,
-                      homeschooling, or personal knowledge building about world heritage sites.
+                      combines gamified learning with cultural education, making it ideal for geography classes,
+                      homeschooling, or personal knowledge building about world heritage sites in 2025.
                     </p>
                   </div>
                 </div>
@@ -1304,7 +1304,7 @@ Play at: ${url}`)
                       Which famous landmarks are included?
                     </h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      Our database features 45+ world-famous man-made monuments including the Eiffel Tower, Great
+                      Our database features 150+ world-famous man-made monuments including the Eiffel Tower, Great
                       Pyramid of Giza, Statue of Liberty, Taj Mahal, Colosseum, Great Wall of China, Machu Picchu,
                       Sydney Opera House, and other historic architectural achievements. We focus on culturally
                       significant structures built by humans, excluding natural phenomena and avoiding politically
@@ -1325,7 +1325,7 @@ Play at: ${url}`)
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       Distance hints show how far your guess is from the target monument in kilometers, helping you
                       understand global geography and spatial relationships. This teaches you about continental
-                      distances, country proximity, and helps develop better world map mental models.
+                      distances, country proximity, and helps develop better world map mental models through interactive learning.
                     </p>
                   </div>
                 </div>
@@ -1342,7 +1342,7 @@ Play at: ${url}`)
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       Beyond geography, you'll learn about architectural styles, historical periods, cultural
                       significance, and the stories behind each monument. Each landmark comes with rich educational
-                      content about its construction, cultural context, and importance to world heritage.
+                      content about its construction, cultural context, and importance to world heritage and global history.
                     </p>
                   </div>
                 </div>
@@ -1359,7 +1359,7 @@ Play at: ${url}`)
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       A new monument geography puzzle is available every day at midnight in your local timezone. This
                       daily format helps build consistent geography learning habits while keeping the challenge fresh
-                      and engaging for continuous cultural education.
+                      and engaging for continuous cultural education and global awareness.
                     </p>
                   </div>
                 </div>
@@ -1376,7 +1376,7 @@ Play at: ${url}`)
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       While each daily puzzle has a set difficulty, monuments range from well-known landmarks like the
                       Eiffel Tower to more challenging sites like Petra or Angkor Wat. Building a winning streak unlocks
-                      bonus features that make future puzzles slightly easier, supporting progressive learning.
+                      bonus features that make future puzzles slightly easier, supporting progressive learning and skill development.
                     </p>
                   </div>
                 </div>
@@ -1388,10 +1388,10 @@ Play at: ${url}`)
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-amber-500 monument-font flex items-center justify-center gap-2">
                   <span className="text-2xl">🎯</span>
-                  Geography Quiz Strategies & Learning Tips
+                  Modern Geography Learning Strategies & Tips
                 </h3>
                 <p className={`mt-2 ${darkMode ? "text-slate-400" : "text-slate-600"}`}>
-                  Master world geography and landmark identification with these expert strategies
+                  Master world geography and landmark identification with these 2025 expert strategies
                 </p>
               </div>
 
@@ -1403,7 +1403,7 @@ Play at: ${url}`)
                     <h4 className="font-semibold text-amber-500 mb-2">Study World Geography</h4>
                     <p className={`text-sm ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       Learn continental layouts, major countries, and regional characteristics. Understanding global
-                      geography helps you make educated guesses about monument locations and cultural contexts.
+                      geography helps you make educated guesses about monument locations and cultural contexts in our interactive learning environment.
                     </p>
                   </div>
                 </div>
@@ -1415,7 +1415,7 @@ Play at: ${url}`)
                     <h4 className="font-semibold text-amber-500 mb-2">Recognize Architectural Styles</h4>
                     <p className={`text-sm ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       Different civilizations have distinct architectural features. Gothic spires suggest Europe,
-                      pyramid shapes indicate Egypt or Central America, and pagoda styles point to East Asia.
+                      pyramid shapes indicate Egypt or Central America, and pagoda styles point to East Asia. This visual learning approach enhances cultural understanding.
                     </p>
                   </div>
                 </div>
@@ -1427,7 +1427,7 @@ Play at: ${url}`)
                     <h4 className="font-semibold text-amber-500 mb-2">Use Distance Clues Strategically</h4>
                     <p className={`text-sm ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       Distance hints reveal geographic proximity. Thousands of kilometers suggest different continents,
-                      while hundreds indicate neighboring countries. Use this to narrow down regions systematically.
+                      while hundreds indicate neighboring countries. Use this to narrow down regions systematically and develop spatial awareness skills.
                     </p>
                   </div>
                 </div>
