@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { SEOOptimizer } from "@/components/seo-optimizer"
 import { ErrorBoundary } from "@/components/error-boundary"
 import { SEOAnalytics } from "@/components/seo-analytics"
+import { ConsentManager } from "@/components/consent-manager"
 
 import { GoogleAdSenseAuto } from "@/components/google-adsense-auto"
 
@@ -523,7 +524,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google Analytics - Exact format from Google Analytics dashboard */}
+        {/* Google Analytics - GA4 Implementation */}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <>
             {/* Google tag (gtag.js) */}
@@ -538,21 +539,28 @@ export default function RootLayout({
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
                   
-                  // Initialize Consent Mode v2 BEFORE config
+                  // Initialize Consent Mode v2 with analytics enabled by default
                   gtag('consent', 'default', {
-                    analytics_storage: 'denied',
+                    analytics_storage: 'granted',
                     ad_storage: 'denied',
                     ad_user_data: 'denied',
                     ad_personalization: 'denied',
-                    functionality_storage: 'denied',
-                    personalization_storage: 'denied',
-                    wait_for_update: 500
+                    functionality_storage: 'granted',
+                    personalization_storage: 'denied'
                   });
                   
                   gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
                     anonymize_ip: true,
                     allow_google_signals: false,
-                    allow_ad_personalization_signals: false
+                    allow_ad_personalization_signals: false,
+                    page_title: document.title,
+                    page_location: window.location.href
+                  });
+                  
+                  // Track page views
+                  gtag('event', 'page_view', {
+                    page_title: document.title,
+                    page_location: window.location.href
                   });
                 `,
               }}
@@ -644,6 +652,7 @@ export default function RootLayout({
           {/* Google AdSense Auto Ads */}
           <GoogleAdSenseAuto />
           <Footer />
+          <ConsentManager />
         </Providers>
       </body>
     </html>
