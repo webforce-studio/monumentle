@@ -20,18 +20,21 @@ function generateImageUrls(baseUrl: string) {
     }
   }
 
+  // Clean the base URL to remove existing parameters
+  const cleanBaseUrl = baseUrl.split('?')[0]
+  
   return {
     thumbnail: {
-      webp: `${baseUrl}?w=300&h=200&fit=crop&crop=center&auto=format&q=80`,
-      jpg: `${baseUrl}?w=300&h=200&fit=crop&crop=center&auto=format&q=80`,
+      webp: `${cleanBaseUrl}?w=300&h=200&fit=crop&crop=center&auto=format&q=80`,
+      jpg: `${cleanBaseUrl}?w=300&h=200&fit=crop&crop=center&auto=format&q=80`,
     },
     medium: {
-      webp: `${baseUrl}?w=800&h=600&fit=crop&crop=center&auto=format&q=85`,
-      jpg: `${baseUrl}?w=800&h=600&fit=crop&crop=center&auto=format&q=85`,
+      webp: `${cleanBaseUrl}?w=800&h=600&fit=crop&crop=center&auto=format&q=85`,
+      jpg: `${cleanBaseUrl}?w=800&h=600&fit=crop&crop=center&auto=format&q=85`,
     },
     large: {
-      webp: `${baseUrl}?w=1200&h=900&fit=crop&crop=center&auto=format&q=90`,
-      jpg: `${baseUrl}?w=1200&h=900&fit=crop&crop=center&auto=format&q=90`,
+      webp: `${cleanBaseUrl}?w=1200&h=900&fit=crop&crop=center&auto=format&q=90`,
+      jpg: `${cleanBaseUrl}?w=1200&h=900&fit=crop&crop=center&auto=format&q=90`,
     },
   }
 }
