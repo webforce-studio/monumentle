@@ -4,7 +4,6 @@ import "./globals.css"
 import { Providers } from "./providers"
 import { Footer } from "@/components/footer"
 import { AdvancedCookieConsent, SimpleCookieConsent } from "@/components/cookie-consent"
-import { GoogleAnalytics } from "@/components/google-analytics"
 
 export const metadata: Metadata = {
   title: "Monumentle - Daily Monument Guessing Game | Test Your Cultural Knowledge",
@@ -360,6 +359,43 @@ export default function RootLayout({
             }),
           }}
         />
+
+        {/* Google Analytics - Exact format from Google Analytics dashboard */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            {/* Google tag (gtag.js) */}
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  
+                  // Initialize Consent Mode v2 BEFORE config
+                  gtag('consent', 'default', {
+                    analytics_storage: 'denied',
+                    ad_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied',
+                    functionality_storage: 'denied',
+                    personalization_storage: 'denied',
+                    wait_for_update: 500
+                  });
+                  
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
+                    anonymize_ip: true,
+                    allow_google_signals: false,
+                    allow_ad_personalization_signals: false
+                  });
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body>
         <Providers>
@@ -370,11 +406,6 @@ export default function RootLayout({
           
           {/* Option 2: Advanced Cookie Consent (recommended) */}
           <AdvancedCookieConsent />
-          
-          {/* Google Analytics with Consent Mode v2 */}
-          {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-            <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
-          )}
         </Providers>
         <Footer />
       </body>
