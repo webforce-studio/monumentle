@@ -1,5 +1,5 @@
-// Complete monument database with 96 monuments
-// Last updated: 2025-07-20T11:29:51.546Z
+// Complete monument database with 152 monuments
+// Last updated: 2025-07-20T15:03:25.595Z
 
 export interface Monument {
   id: number
@@ -3385,6 +3385,1966 @@ export const monuments: Monument[] = [
       "source": "Unsplash",
       "photoId": "1555993539-1732b0258235",
       "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 293,
+    "name": "White House",
+    "location": "Washington D.C.",
+    "country": "USA",
+    "continent": "North America",
+    "type": "Government Building",
+    "kebabId": "white-house",
+    "description": "The White House situated at 1600 Pennsylvania Avenue NW Washington D.C. is the official residence and workplace of the President of the United States. Designed by architect James Hoban in the neoclassical style it consists of the Executive Residence West Wing East Wing and surrounding gardens. As both a historic structure and a seat of executive power it is among the most recognized government buildings globally and the frequent site of national ceremonies and state functions.",
+    "yearBuilt": 1792,
+    "height": null,
+    "latitude": 38.897676,
+    "longitude": -77.03653,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1613235832689-999d314d023b?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1613235832689-999d314d023b?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1613235832689-999d314d023b?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1613235832689-999d314d023b?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1613235832689-999d314d023b?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1613235832689-999d314d023b?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 294,
+    "name": "Lincoln Memorial",
+    "location": "Washington D.C.",
+    "country": "USA",
+    "continent": "North America",
+    "type": "Monument",
+    "kebabId": "lincoln-memorial",
+    "description": "Located at the western end of the National Mall the Lincoln Memorial honors Abraham Lincoln the 16th President of the United States. Architect Henry Bacon designed the monument in the form of a classical Greek temple featuring 36 Doric columns. Inside sits Daniel Chester French's colossal marble statue of Lincoln accompanied by inscriptions of two of his speeches. The memorial is a symbol of unity and civil rights hosting numerous historic gatherings including Dr. Martin Luther King Jr.'s I Have a Dream speech.",
+    "yearBuilt": 1914,
+    "height": null,
+    "latitude": 38.889269,
+    "longitude": -77.050176,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1713292399900-9e4e9f213793?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1713292399900-9e4e9f213793?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1713292399900-9e4e9f213793?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1713292399900-9e4e9f213793?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1713292399900-9e4e9f213793?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1713292399900-9e4e9f213793?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 295,
+    "name": "Washington Monument",
+    "location": "Washington D.C.",
+    "country": "USA",
+    "continent": "North America",
+    "type": "Monument",
+    "kebabId": "washington-monument",
+    "description": "The Washington Monument is a towering white marble obelisk located at the center of the National Mall commemorating George Washington the first U.S. president. Standing at 555 feet it was the world's tallest structure upon completion. The monument's observation deck provides panoramic views of the city while its simple design reflects the dignity and leadership of Washington himself making it an enduring icon of American history and achievement.",
+    "yearBuilt": 1848,
+    "height": null,
+    "latitude": 38.889484,
+    "longitude": -77.035278,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1722311621361-f85e0ebfb108?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1722311621361-f85e0ebfb108?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1722311621361-f85e0ebfb108?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1722311621361-f85e0ebfb108?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1722311621361-f85e0ebfb108?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1722311621361-f85e0ebfb108?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 296,
+    "name": "Capitol Building",
+    "location": "Washington D.C.",
+    "country": "USA",
+    "continent": "North America",
+    "type": "Government Building",
+    "kebabId": "capitol-building",
+    "description": "The United States Capitol sits atop Capitol Hill at the eastern end of the National Mall. Designed by Dr. William Thornton the neoclassical structure houses the U.S. Congress. Its central dome and two wings—Senate and House of Representatives—make it one of the most distinctive legislative buildings worldwide. The Capitol is both a functional government center and a symbol of the United States' democratic ideals and legislative process.",
+    "yearBuilt": 1793,
+    "height": null,
+    "latitude": 38.889939,
+    "longitude": -77.009051,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1624417963912-8532660d9de8?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1624417963912-8532660d9de8?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1624417963912-8532660d9de8?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1624417963912-8532660d9de8?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1624417963912-8532660d9de8?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1624417963912-8532660d9de8?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 297,
+    "name": "Gateway Arch",
+    "location": "St. Louis",
+    "country": "USA",
+    "continent": "North America",
+    "type": "Monument",
+    "kebabId": "gateway-arch",
+    "description": "The Gateway Arch standing 630 feet tall on the west bank of the Mississippi River is the world's tallest arch and the tallest man-made monument in the Western Hemisphere. Designed by Eero Saarinen its stainless steel structure honors St. Louis's role as the Gateway to the West. Visitors can travel to the top via custom tram for sweeping views of the city and river. The Arch serves as the centerpiece of Gateway Arch National Park and is a landmark of modern engineering.",
+    "yearBuilt": 1963,
+    "height": null,
+    "latitude": 38.624691,
+    "longitude": -90.184776,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1595647274814-7cfbf1e344d0?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1595647274814-7cfbf1e344d0?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1595647274814-7cfbf1e344d0?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1595647274814-7cfbf1e344d0?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1595647274814-7cfbf1e344d0?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1595647274814-7cfbf1e344d0?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 298,
+    "name": "Hoover Dam",
+    "location": "Nevada/Arizona",
+    "country": "USA",
+    "continent": "North America",
+    "type": "Dam",
+    "kebabId": "hoover-dam",
+    "description": "The Hoover Dam bridging the border between Nevada and Arizona is a massive concrete arch-gravity dam in the Black Canyon of the Colorado River. Built during the Great Depression it tamed the river to provide dependable water and electrical power to the Southwest. The dam stands 726 feet high and forms Lake Mead the largest reservoir in the U.S. by volume. Hoover Dam remains an engineering marvel and a critical resource for agriculture water supply and renewable energy in the region.",
+    "yearBuilt": 1931,
+    "height": null,
+    "latitude": 36.015519,
+    "longitude": -114.737686,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1582543529952-4d27d5c81a6d?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1582543529952-4d27d5c81a6d?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1582543529952-4d27d5c81a6d?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1582543529952-4d27d5c81a6d?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1582543529952-4d27d5c81a6d?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1582543529952-4d27d5c81a6d?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 299,
+    "name": "Peggy's Cove Lighthouse",
+    "location": "Nova Scotia",
+    "country": "Canada",
+    "continent": "North America",
+    "type": "Lighthouse",
+    "kebabId": "peggy-s-cove-lighthouse",
+    "description": "The Peggy's Cove Lighthouse officially known as Peggys Point Lighthouse stands on the granite rocks at Peggy's Cove in Nova Scotia Canada. Built in 1915 the lighthouse is an octagonal concrete tower painted white with a red lantern on top rising to a height of about 15 meters. It marks the eastern entrance of St. Margarets Bay and is one of the most photographed and recognizable structures in Canada. The lighthouse and its rugged Atlantic coastline setting create a picturesque landscape attracting thousands of visitors annually.",
+    "yearBuilt": 1915,
+    "height": null,
+    "latitude": 44.4917,
+    "longitude": -63.9158,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1593664606979-69efba2128d8?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1593664606979-69efba2128d8?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1593664606979-69efba2128d8?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1593664606979-69efba2128d8?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1593664606979-69efba2128d8?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1593664606979-69efba2128d8?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 300,
+    "name": "Teotihuacan",
+    "location": "Mexico City",
+    "country": "Mexico",
+    "continent": "North America",
+    "type": "Archaeological Site",
+    "kebabId": "teotihuacan",
+    "description": "Teotihuacan is an ancient Mesoamerican city situated about 40 km northeast of Mexico City renowned for its massive pyramids and complex urban layout. Created between the 1st century BCE and the 3rd century CE at its peak it was among the largest cities in the world with a population over 100000. Its major monuments include the Pyramid of the Sun Pyramid of the Moon and the Temple of the Feathered Serpent (Quetzalcoatl). Teotihuacan's grand Avenue of the Dead links these monuments surrounded by residential compounds murals and plazas that offer crucial insight into pre-Aztec urban culture and religion.",
+    "yearBuilt": 100,
+    "height": null,
+    "latitude": 19.6925,
+    "longitude": -98.8436,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1694995605150-f8edef4df31a?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1694995605150-f8edef4df31a?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1694995605150-f8edef4df31a?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1694995605150-f8edef4df31a?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1694995605150-f8edef4df31a?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1694995605150-f8edef4df31a?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 301,
+    "name": "Tulum",
+    "location": "Quintana Roo",
+    "country": "Mexico",
+    "continent": "North America",
+    "type": "Archaeological Site",
+    "kebabId": "tulum",
+    "description": "Tulum is a walled Maya city perched on tall cliffs overlooking the Caribbean Sea on Mexico's Yucatán Peninsula. Flourishing primarily from the 13th to 15th centuries CE it was one of the last cities built and inhabited by the Maya. Its most iconic structure El Castillo stands atop the bluff offering commanding views of the turquoise sea below. Tulum served as a major trading port particularly for obsidian. Unlike many inland Maya sites its unique coastal position adds archaeological and scenic allure attracting scholars and tourists alike.",
+    "yearBuilt": 1200,
+    "height": null,
+    "latitude": 20.2117,
+    "longitude": -87.4658,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/32274687/pexels-photo-32274687.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/32274687/pexels-photo-32274687.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/32274687/pexels-photo-32274687.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/32274687/pexels-photo-32274687.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/32274687/pexels-photo-32274687.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/32274687/pexels-photo-32274687.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 302,
+    "name": "Palenque",
+    "location": "Chiapas",
+    "country": "Mexico",
+    "continent": "North America",
+    "type": "Archaeological Site",
+    "kebabId": "palenque",
+    "description": "Palenque is one of the most significant ancient Maya cities situated in the jungle foothills of Chiapas Mexico. Celebrated for its finely sculptured architecture and bas-reliefs its classic period artifacts (flourishing in the 7th century CE) include the Temple of the Inscriptions which houses the tomb of the great ruler Pakal. Palenque's ruins featuring palaces temples and an iconic aqueduct harmonize with the tropical forest setting providing invaluable insight into Maya cosmology and governance.",
+    "yearBuilt": 226,
+    "height": null,
+    "latitude": 17.4848,
+    "longitude": -92.0453,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1581442297526-ba11d408ac91?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1581442297526-ba11d408ac91?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1581442297526-ba11d408ac91?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1581442297526-ba11d408ac91?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1581442297526-ba11d408ac91?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1581442297526-ba11d408ac91?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 303,
+    "name": "Monte Albán",
+    "location": "Oaxaca",
+    "country": "Mexico",
+    "continent": "North America",
+    "type": "Archaeological Site",
+    "kebabId": "monte-alb-n",
+    "description": "Monte Albán is a major pre-Columbian archaeological site located atop a ridge in the Valley of Oaxaca southern Mexico. Established around 500 BCE by the Zapotec civilization it served as their capital for over a millennium flourishing as a center for governance culture and religion. The expansive site—rising approximately 400 meters above the surrounding plain—features grand plazas pyramids temples tombs ball courts and hundreds of artificial terraces spread along the ridge. Monte Albán is especially noted for the danzantes: carved stone slabs with human figures and hieroglyphs reflecting the city's artistic and sociopolitical sophistication. The ceremonial core organized along a north-south axis is among Mesoamerica's most impressive symbolizing the region's exceptional urban planning and sacred topography. Although its population declined by the 8th century CE its influence endured among later cultures including the Mixtecs and Aztecs.",
+    "yearBuilt": 500,
+    "height": null,
+    "latitude": 17.04389,
+    "longitude": -96.76778,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1530455235907-0a59ea1e04ea?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1530455235907-0a59ea1e04ea?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1530455235907-0a59ea1e04ea?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1530455235907-0a59ea1e04ea?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1530455235907-0a59ea1e04ea?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1530455235907-0a59ea1e04ea?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 304,
+    "name": "Havana Old Town",
+    "location": "Havana",
+    "country": "Cuba",
+    "continent": "North America",
+    "type": "Historic District",
+    "kebabId": "havana-old-town",
+    "description": "Habana Vieja or Havana Old Town is the original core of the city of Havana Cuba founded by the Spanish in 1519. This UNESCO World Heritage site showcases an exceptional collection of Spanish colonial architecture cobbled streets and grand plazas such as Plaza de Armas and Plaza Vieja. Landmarks include the Castillo de la Real Fuerza Havana Cathedral and numerous pastel-colored mansions. Despite centuries of history the area remains vibrant filled with music art and everyday life. Old Havana is a living testament to Cuba's colonial history blending Baroque Neoclassical and Art Deco styles with Caribbean flair. Restoration efforts have revitalized much of the area making it a major cultural and tourist hub.",
+    "yearBuilt": 1519,
+    "height": null,
+    "latitude": 23.14,
+    "longitude": -82.353,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1528273616809-a032a10474d4?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1528273616809-a032a10474d4?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1528273616809-a032a10474d4?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1528273616809-a032a10474d4?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1528273616809-a032a10474d4?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1528273616809-a032a10474d4?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 305,
+    "name": "El Morro",
+    "location": "San Juan",
+    "country": "Puerto Rico",
+    "continent": "North America",
+    "type": "Fortress",
+    "kebabId": "el-morro",
+    "description": "Castillo San Felipe del Morro commonly known as El Morro is a formidable citadel at the entrance of San Juan Bay Puerto Rico. Constructed starting in 1539 by Spanish colonists the fort was expanded for over 250 years to protect against seaborne attacks. With six massive levels rising above the rocky headland El Morro features thick stone walls ramparts turrets and dungeons. The site offers sweeping views of the Atlantic Ocean and old San Juan. A UNESCO World Heritage Site El Morro reflects centuries of military engineering colonial rivalry and Puerto Rico's strategic Caribbean location. Today it is a symbol of Puerto Rican heritage and a popular historic attraction.",
+    "yearBuilt": 1539,
+    "height": null,
+    "latitude": 18.4711,
+    "longitude": -66.1248,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/15306393/pexels-photo-15306393.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/15306393/pexels-photo-15306393.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/15306393/pexels-photo-15306393.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/15306393/pexels-photo-15306393.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/15306393/pexels-photo-15306393.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/15306393/pexels-photo-15306393.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 306,
+    "name": "Tikal",
+    "location": "El Petén",
+    "country": "Guatemala",
+    "continent": "North America",
+    "type": "Archaeological Site",
+    "kebabId": "tikal",
+    "description": "Tikal is a towering ancient Maya city situated amid the tropical rainforest of northern Guatemala's El Petén region. Settled as early as the 4th century BCE Tikal became one of the largest Maya urban and ceremonial centers during the Classic Period (c. 200–900 CE). The site is dominated by monumental pyramid-temples rising above the jungle canopy extensive plazas ball courts stelae and royal tombs. Tikal's monumental core reflects a highly complex society renowned for its written texts astronomical observations and political prowess. Now a UNESCO World Heritage Site Tikal's ruins offer crucial insights into Maya civilization and are enveloped in a lush wildlife-rich biosphere reserve.",
+    "yearBuilt": 400,
+    "height": null,
+    "latitude": 17.2214,
+    "longitude": -89.6237,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1669025467363-ace9bad030dc?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1669025467363-ace9bad030dc?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1669025467363-ace9bad030dc?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1669025467363-ace9bad030dc?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1669025467363-ace9bad030dc?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1669025467363-ace9bad030dc?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 307,
+    "name": "Mayan Ruins of Copán",
+    "location": "Copán",
+    "country": "Honduras",
+    "continent": "North America",
+    "type": "Archaeological Site",
+    "kebabId": "mayan-ruins-of-cop-n",
+    "description": "Located in western Honduras near the Guatemalan border the ruins of Copán were once the capital of a major Classic period Maya kingdom. The site is famous for its impressive hieroglyphic stairway intricate stelae altars beautiful plazas ball courts and the iconic Acropolis. The city flourished as a cultural and ceremonial center renowned for its advanced knowledge of astronomy mathematics and monumental sculpture. Copán's meticulously carved monuments and inscriptions have provided profound insights into the history and rulers of the ancient Maya civilization.",
+    "yearBuilt": 426,
+    "height": null,
+    "latitude": 14.8401,
+    "longitude": -89.1421,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1671538307956-0afd619ec9c7?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1671538307956-0afd619ec9c7?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1671538307956-0afd619ec9c7?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1671538307956-0afd619ec9c7?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1671538307956-0afd619ec9c7?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1671538307956-0afd619ec9c7?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 308,
+    "name": "Chichén Itzá",
+    "location": "Yucatán",
+    "country": "Mexico",
+    "continent": "North America",
+    "type": "Archaeological Site",
+    "kebabId": "chich-n-itz",
+    "description": "Chichén Itzá is a sprawling complex of Maya ruins in Yucatán Mexico acclaimed for its monumental architecture and astronomical alignments. The site's best-known feature is the Temple of Kukulcán (El Castillo) a step pyramid with 91 steps on each side culminating in a final step to the temple totaling 365 steps—the number of days in a solar year. The site also includes the Great Ball Court Temple of the Warriors and the Sacred Cenote reflecting a blend of Maya and Toltec influence. It remains a testament to the advanced engineering and astronomical sophistication of its builders.",
+    "yearBuilt": 600,
+    "height": null,
+    "latitude": 20.6843,
+    "longitude": -88.5678,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1561577101-aa749bffbb70?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1561577101-aa749bffbb70?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1561577101-aa749bffbb70?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1561577101-aa749bffbb70?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1561577101-aa749bffbb70?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1561577101-aa749bffbb70?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 309,
+    "name": "Buenos Aires Obelisk",
+    "location": "Buenos Aires",
+    "country": "Argentina",
+    "continent": "South America",
+    "type": "Monument",
+    "kebabId": "buenos-aires-obelisk",
+    "description": "The Obelisk of Buenos Aires is a defining Modernist monument rising 67.5 meters at the intersection of Avenida 9 de Julio and Avenida Corrientes marking the city's historic founding and commemorating 400 years since its first foundation. Designed by architect Alberto Prebisch the white stone monument has become a symbol of Buenos Aires serving as the backdrop for political rallies celebrations and public gatherings. Its stark form and prominent location make it instantly recognizable and a central reference point in the Argentine capital's urban landscape.",
+    "yearBuilt": 1936,
+    "height": null,
+    "latitude": -34.6031,
+    "longitude": -58.3817,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/13278009/pexels-photo-13278009.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/13278009/pexels-photo-13278009.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/13278009/pexels-photo-13278009.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/13278009/pexels-photo-13278009.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/13278009/pexels-photo-13278009.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/13278009/pexels-photo-13278009.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 310,
+    "name": "Chan Chan",
+    "location": "Trujillo",
+    "country": "Peru",
+    "continent": "South America",
+    "type": "Archaeological Site",
+    "kebabId": "chan-chan",
+    "description": "Chan Chan is the largest pre-Columbian city in South America and the capital of the ancient Chimú civilization. Constructed entirely of adobe brick this vast archaeological complex once sprawled over 20 square kilometers just west of present-day Trujillo on the northern Peruvian coast. At its peak the city is believed to have housed as many as 60000 inhabitants. Chan Chan features monumental walls adorned with intricate geometric and animal friezes sprawling ceremonial plazas reservoirs administrative centers and royal compounds. Recognized as a UNESCO World Heritage Site Chan Chan remains a stunning testament to the Chimú's architectural ingenuity and mastery of urban planning in an arid environment.",
+    "yearBuilt": 850,
+    "height": null,
+    "latitude": -8.1047,
+    "longitude": -79.065,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/7329931/pexels-photo-7329931.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/7329931/pexels-photo-7329931.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/7329931/pexels-photo-7329931.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/7329931/pexels-photo-7329931.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/7329931/pexels-photo-7329931.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/7329931/pexels-photo-7329931.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 311,
+    "name": "Sphinx",
+    "location": "Giza",
+    "country": "Egypt",
+    "continent": "Africa",
+    "type": "Monument",
+    "kebabId": "sphinx",
+    "description": "The Great Sphinx of Giza carved directly from the limestone bedrock is one of the world's largest and oldest monumental statues. Measuring 73 meters long and 20 meters high this enigmatic creature with a lion's body and a human head (believed to represent Pharaoh Khafre) guards the Giza Plateau near Cairo. Revered as a symbol of ancient Egypt's ingenuity and power the Sphinx continues to captivate with its mysterious gaze and enduring legends.",
+    "yearBuilt": 2558,
+    "height": null,
+    "latitude": 29.9753,
+    "longitude": 31.1376,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1722595053086-eb36d4c3a6f5?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1722595053086-eb36d4c3a6f5?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1722595053086-eb36d4c3a6f5?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1722595053086-eb36d4c3a6f5?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1722595053086-eb36d4c3a6f5?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1722595053086-eb36d4c3a6f5?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 312,
+    "name": "Abu Simbel",
+    "location": "Aswan",
+    "country": "Egypt",
+    "continent": "Africa",
+    "type": "Temple",
+    "kebabId": "abu-simbel",
+    "description": "Abu Simbel is a monumental archaeological site in southern Egypt comprising two massive rock-cut temples originally built by Pharaoh Ramses II in the 13th century BCE. Carved out of sandstone cliffs along the Nile's west bank the Great Temple honors Ramses II himself while the smaller temple is dedicated to Queen Nefertari and the goddess Hathor. The façade of the main temple is dominated by four colossal statues of Ramses II each over 20 meters high. In the 1960s both temples were relocated to higher ground to prevent submersion by Lake Nasser following the construction of the Aswan High Dam. Today Abu Simbel stands as a magnificent testament to ancient Egyptian engineering religious devotion and artistry.",
+    "yearBuilt": 1250,
+    "height": null,
+    "latitude": 22.34,
+    "longitude": 31.62,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1633163893862-4cdc62de7d82?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1633163893862-4cdc62de7d82?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1633163893862-4cdc62de7d82?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1633163893862-4cdc62de7d82?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1633163893862-4cdc62de7d82?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1633163893862-4cdc62de7d82?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 313,
+    "name": "Karnak Temple",
+    "location": "Luxor",
+    "country": "Egypt",
+    "continent": "Africa",
+    "type": "Temple",
+    "kebabId": "karnak-temple",
+    "description": "Karnak Temple situated near Luxor in southern Egypt is the largest ancient religious complex ever constructed. Developed over nearly two millennia—from the Middle Kingdom around 2000 BCE through the Greco-Roman period—the complex is primarily dedicated to the Theban triad: Amun Mut and Khonsu. Its vast precinct covers over 100 hectares and features towering pylons monumental columns obelisks and intricate reliefs. The hypostyle hall with its 134 massive columns is one of Egypt's most awe-inspiring architectural achievements. Karnak was not just a place of worship but a central stage for political and religious festivals symbolizing the wealth and power of the pharaohs across generations.",
+    "yearBuilt": 2000,
+    "height": null,
+    "latitude": 25.72,
+    "longitude": 32.66,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/18934702/pexels-photo-18934702.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/18934702/pexels-photo-18934702.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/18934702/pexels-photo-18934702.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/18934702/pexels-photo-18934702.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/18934702/pexels-photo-18934702.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/18934702/pexels-photo-18934702.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 314,
+    "name": "Luxor Temple",
+    "location": "Luxor",
+    "country": "Egypt",
+    "continent": "Africa",
+    "type": "Temple",
+    "kebabId": "luxor-temple",
+    "description": "The Luxor Temple is an ancient Egyptian temple complex located on the east bank of the Nile River in the modern city of Luxor (ancient Thebes). Built around 1400 BCE it was primarily constructed by Pharaoh Amenhotep III and expanded by subsequent rulers including Ramses II. Unlike other temples Luxor was not dedicated to a cult god or deified ruler but was instead the focus of the annual Opet Festival celebrating the rejuvenation of kingship. The structure is renowned for its grand colonnades massive pylons statues and its avenue of sphinxes that once connected it to the Temple of Karnak. The site remains one of Egypt's most iconic relics of ancient architecture and religious life.",
+    "yearBuilt": 1400,
+    "height": null,
+    "latitude": 25.6996,
+    "longitude": 32.6396,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1671483330885-62abe0be18a6?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1671483330885-62abe0be18a6?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1671483330885-62abe0be18a6?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1671483330885-62abe0be18a6?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1671483330885-62abe0be18a6?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1671483330885-62abe0be18a6?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 315,
+    "name": "Marrakech Medina",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Medina",
+    "kebabId": "marrakech-medina",
+    "description": "The Marrakech Medina forms the heart of the historic city of Marrakech and is among the best-preserved examples of medieval Islamic urban planning in North Africa. Founded around 1070 by the Almoravid dynasty the medina is a labyrinth of winding alleys bustling souks and vibrant squares centered around landmarks like the Koutoubia Mosque and Jemaa el-Fna. The famed red sandstone city walls completed in the early 12th century have given Marrakech its nickname the Red City. Famed for its unique blend of Berber Arab and Andalusian architectural influences the medina includes palaces gardens madrasas and historic mosques. It was inscribed as a UNESCO World Heritage Site in 1985 for its outstanding testimony to Moroccan culture and its place as a crossroads for trade religion and art across centuries.",
+    "yearBuilt": 1070,
+    "height": null,
+    "latitude": 31.63139,
+    "longitude": -7.98667,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/22711558/pexels-photo-22711558.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/22711558/pexels-photo-22711558.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/22711558/pexels-photo-22711558.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/22711558/pexels-photo-22711558.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/22711558/pexels-photo-22711558.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/22711558/pexels-photo-22711558.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 316,
+    "name": "Chefchaouen",
+    "location": "Chefchaouen",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "City",
+    "kebabId": "chefchaouen",
+    "description": "Chefchaouen is famed for its distinctive blue-washed buildings and tranquil mountainous setting in northern Morocco. The city was founded in 1471 as a small fortress to fend off Portuguese invasions of northern Morocco. Throughout history it has served as a refuge for Jews and Muslims fleeing the Reconquista in Spain reflected in its architecture and culture. Winding blue-hued streets white-washed walls and the backdrop of the Rif Mountains have made Chefchaouen one of the country's most picturesque towns drawing visitors for its unique atmosphere and historic medina.",
+    "yearBuilt": 1471,
+    "height": null,
+    "latitude": 35.1688,
+    "longitude": -5.2637,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 317,
+    "name": "Djemaa el-Fna",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Square",
+    "kebabId": "djemaa-el-fna",
+    "description": "Djemaa el-Fna is the iconic public square at the heart of Marrakech's medina continually serving as a vibrant hub for local life since its origins in the 11th century. This open plaza is famous for its daily and nightly performances including storytellers musicians snake charmers and food vendors creating a living cultural showcase. Its unique atmosphere and social significance have contributed to Djemaa el-Fna being recognized not only as an integral part of the Medina UNESCO site but also celebrated by UNESCO as a Masterpiece of the Oral and Intangible Heritage of Humanity.",
+    "yearBuilt": 1050,
+    "height": null,
+    "latitude": 31.62583,
+    "longitude": -7.98944,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1665949076366-d741f9dfa1bb?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1665949076366-d741f9dfa1bb?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1665949076366-d741f9dfa1bb?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1665949076366-d741f9dfa1bb?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1665949076366-d741f9dfa1bb?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1665949076366-d741f9dfa1bb?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 318,
+    "name": "Lalibela",
+    "location": "Amhara Region",
+    "country": "Ethiopia",
+    "continent": "Africa",
+    "type": "Rock-hewn Churches",
+    "kebabId": "lalibela",
+    "description": "Lalibela is a UNESCO World Heritage site in Ethiopia's Amhara Region renowned for its monolithic rock-hewn churches constructed in the late 12th and early 13th centuries under the reign of King Lalibela. These eleven medieval churches carved entirely out of volcanic rock are masterpieces of engineering and devotion frequently set in deep trenches or connected by underground passages. Lalibela remains a major pilgrimage site for Ethiopian Orthodox Christians representing one of the most significant religious and cultural complexes in Africa admired for both its architectural ingenuity and spiritual heritage.",
+    "yearBuilt": 12,
+    "height": null,
+    "latitude": 12.03,
+    "longitude": 39.0472,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/7438884/pexels-photo-7438884.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/7438884/pexels-photo-7438884.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/7438884/pexels-photo-7438884.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/7438884/pexels-photo-7438884.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/7438884/pexels-photo-7438884.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/7438884/pexels-photo-7438884.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 319,
+    "name": "Sydney Harbour Bridge",
+    "location": "Sydney",
+    "country": "Australia",
+    "continent": "Oceania",
+    "type": "Bridge",
+    "kebabId": "sydney-harbour-bridge",
+    "description": "The Sydney Harbour Bridge completed in 1932 is a steel through arch bridge known as The Coathanger. Spanning 503 meters it connects the Sydney central business district with the North Shore forming an integral part of the city's skyline alongside the nearby Opera House. The bridge carries vehicles trains and pedestrians and is famous for its scenic BridgeClimb experience offering panoramic views of the harbour. It remains a symbol of Australian engineering and ambition.",
+    "yearBuilt": 1932,
+    "height": null,
+    "latitude": -33.8523,
+    "longitude": 151.2108,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1589610833901-8e91851e2291?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1589610833901-8e91851e2291?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1589610833901-8e91851e2291?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1589610833901-8e91851e2291?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1589610833901-8e91851e2291?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1589610833901-8e91851e2291?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 320,
+    "name": "Hobbiton",
+    "location": "Matamata",
+    "country": "New Zealand",
+    "continent": "Oceania",
+    "type": "Movie Set",
+    "kebabId": "hobbiton",
+    "description": "Hobbiton is a permanently maintained movie set located on a working farm near Matamata crafted for Peter Jackson's acclaimed film adaptations of J.R.R. Tolkien's works. The site features picturesque rolling hills lush pastures and iconic Hobbit holes notably Bilbo and Frodo Baggins' Bag End. Since opening to the public Hobbiton has become one of New Zealand's top tourism destinations offering guided tours into the heart of Middle-earth's cinematic magic.",
+    "yearBuilt": 1999,
+    "height": null,
+    "latitude": -37.8722,
+    "longitude": 175.6823,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/17824132/pexels-photo-17824132.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/17824132/pexels-photo-17824132.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/17824132/pexels-photo-17824132.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/17824132/pexels-photo-17824132.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/17824132/pexels-photo-17824132.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/17824132/pexels-photo-17824132.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 321,
+    "name": "Batu Caves",
+    "location": "Selangor",
+    "country": "Malaysia",
+    "continent": "Oceania",
+    "type": "Cave Temple",
+    "kebabId": "batu-caves",
+    "description": "Batu Caves is a striking 325-meter limestone hill complex featuring a network of caves and cave temples in Gombak about 13 km north of Kuala Lumpur. Famed for its vibrant Thaipusam festival the site features Malaysia's most prominent Hindu shrine dedicated to Lord Murugan fronted by a 43-meter-tall golden statue. The caves serve religious natural and cultural roles drawing pilgrims tourists and nature enthusiasts to their awe-inspiring interior and colorful temple steps.",
+    "yearBuilt": 1891,
+    "height": null,
+    "latitude": 3.2375,
+    "longitude": 101.6839,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1639676529084-ac1c9399c0bf?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1639676529084-ac1c9399c0bf?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1639676529084-ac1c9399c0bf?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1639676529084-ac1c9399c0bf?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1639676529084-ac1c9399c0bf?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1639676529084-ac1c9399c0bf?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 322,
+    "name": "Burj Khalifa",
+    "location": "Dubai",
+    "country": "UAE",
+    "continent": "Middle East",
+    "type": "Skyscraper",
+    "kebabId": "burj-khalifa",
+    "description": "The Burj Khalifa is the tallest building in the world reaching a height of 828 meters including its spire. Located in downtown Dubai it was officially opened in January 2010. The structure was designed by Adrian Smith of Skidmore Owings & Merrill and features a blend of commercial residential and hotel uses. Its design draws inspiration from Islamic architecture and its observation decks offer panoramic views of Dubai and the surrounding desert. The Burj Khalifa represents a feat of modern engineering and urban ambition.",
+    "yearBuilt": 2004,
+    "height": null,
+    "latitude": 25.1972,
+    "longitude": 55.2744,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1671818786462-b55a5bb49a23?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1671818786462-b55a5bb49a23?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1671818786462-b55a5bb49a23?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1671818786462-b55a5bb49a23?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1671818786462-b55a5bb49a23?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1671818786462-b55a5bb49a23?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 323,
+    "name": "Western Wall",
+    "location": "Jerusalem",
+    "country": "Israel",
+    "continent": "Middle East",
+    "type": "Religious Site",
+    "kebabId": "western-wall",
+    "description": "The Western Wall sometimes called the Wailing Wall is a surviving remnant of the ancient wall that surrounded the Second Jewish Temple's courtyard on the Temple Mount. Constructed by Herod the Great as part of a monumental expansion of the Second Temple beginning around 19 BCE the limestone wall stretches about 488 meters though only about 60 meters are visible today. It stands as a revered site of prayer and pilgrimage for Jews from across the world and has also become an iconic symbol in the wider Abrahamic religious tradition. The plaza before the wall is a focal point of Jewish religious life attracting millions of visitors wishing to recite prayers and insert written notes into the wall's crevices.",
+    "yearBuilt": 19,
+    "height": null,
+    "latitude": 31.7768,
+    "longitude": 35.2345,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1560165454-9e1d2ae27390?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1560165454-9e1d2ae27390?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1560165454-9e1d2ae27390?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1560165454-9e1d2ae27390?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1560165454-9e1d2ae27390?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1560165454-9e1d2ae27390?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 324,
+    "name": "Church of the Holy Sepulchre",
+    "location": "Jerusalem",
+    "country": "Israel",
+    "continent": "Middle East",
+    "type": "Church",
+    "kebabId": "church-of-the-holy-sepulchre",
+    "description": "The Church of the Holy Sepulchre located in Jerusalem's Christian Quarter is considered by many as the holiest site in Christianity. Built under the orders of Emperor Constantine the Great the complex is believed to contain both the site of the crucifixion (Golgotha) and the tomb where Jesus was buried and resurrected. Its architecture reveals the layered history of the site with Byzantine Crusader and subsequent structures. The church is a focal point for Christian pilgrimage managed by several Christian denominations and plays a central role in global religious and cultural history.",
+    "yearBuilt": 326,
+    "height": null,
+    "latitude": 31.7786,
+    "longitude": 35.2297,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1658035238333-703e92ebddaf?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1658035238333-703e92ebddaf?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1658035238333-703e92ebddaf?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1658035238333-703e92ebddaf?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1658035238333-703e92ebddaf?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1658035238333-703e92ebddaf?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 325,
+    "name": "Jerash",
+    "location": "Jerash",
+    "country": "Jordan",
+    "continent": "Middle East",
+    "type": "Archaeological Site",
+    "kebabId": "jerash",
+    "description": "Jerash the ancient city known as Gerasa is among the best-preserved Greco-Roman cities in the Middle East. The site is renowned for its colonnaded streets grand temples (notably those dedicated to Zeus and Artemis) Hadrian's Arch agora theaters and expansive hippodrome. Having reached its peak during the Roman period Jerash offers visitors a vivid picture of city life in Roman Decapolis with sprawling ruins that testify to centuries of urban continuity and cultural interchange.",
+    "yearBuilt": 1,
+    "height": null,
+    "latitude": 32.2767,
+    "longitude": 35.8917,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1597814419713-99e2923951b6?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1597814419713-99e2923951b6?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1597814419713-99e2923951b6?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1597814419713-99e2923951b6?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1597814419713-99e2923951b6?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1597814419713-99e2923951b6?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 326,
+    "name": "Palm Jumeirah",
+    "location": "Dubai",
+    "country": "UAE",
+    "continent": "Middle East",
+    "type": "Artificial Island",
+    "kebabId": "palm-jumeirah",
+    "description": "Palm Jumeirah is an artificial archipelago in the shape of a palm tree constructed on reclaimed land in the Persian Gulf off the coast of Dubai. Developed by Nakheel the Palm quickly became an icon of modern engineering and luxury living. The project features a trunk 16 fronds and a crescent that serves as a breakwater encompassing luxury hotels beachfront villas upscale apartments and entertainment destinations. Its creation is a symbol of Dubai's ambition and rapid transformation into a global tourism and real estate hub.",
+    "yearBuilt": 2001,
+    "height": null,
+    "latitude": 25.1083,
+    "longitude": 55.1333,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1682410601904-24ec1d9858e6?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1682410601904-24ec1d9858e6?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1682410601904-24ec1d9858e6?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1682410601904-24ec1d9858e6?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1682410601904-24ec1d9858e6?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1682410601904-24ec1d9858e6?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 327,
+    "name": "Sheikh Zayed Grand Mosque",
+    "location": "Abu Dhabi",
+    "country": "UAE",
+    "continent": "Middle East",
+    "type": "Mosque",
+    "kebabId": "sheikh-zayed-grand-mosque",
+    "description": "The Sheikh Zayed Grand Mosque completed in 2007 is the largest mosque in the United Arab Emirates and a masterpiece of contemporary Islamic architecture. Designed to embody Islamic cultural heritage while celebrating innovative engineering the mosque features 82 domes over a thousand columns massive marble courtyards and one of the world's largest hand-knotted carpets. Its snow-white silhouette adorned in semi-precious stones gold and intricate mosaics welcomes worshippers and tourists alike fostering intercultural dialogue and serving as a national emblem of the UAE's vision for openness and cultural tolerance.",
+    "yearBuilt": 1996,
+    "height": null,
+    "latitude": 24.4122,
+    "longitude": 54.4747,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1641900039023-589fb5ff48aa?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1641900039023-589fb5ff48aa?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1641900039023-589fb5ff48aa?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1641900039023-589fb5ff48aa?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1641900039023-589fb5ff48aa?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1641900039023-589fb5ff48aa?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 328,
+    "name": "Burj Al Arab",
+    "location": "Dubai",
+    "country": "UAE",
+    "continent": "Middle East",
+    "type": "Hotel",
+    "kebabId": "burj-al-arab",
+    "description": "The Burj Al Arab is one of the world's most recognizable hotels built on an artificial island 280 meters off the Dubai coastline. Designed by architect Tom Wright of Atkins the sail-shaped structure rises to 321 meters making it one of the tallest hotels globally. The building's striking form luxurious suites and seven-star reputation have made it a symbol of modern Dubai's ambitions and opulence. Its interiors feature lavish materials such as gold leaf and Carrara marble and the hotel offers some of the most exclusive accommodations and dining experiences in the world.",
+    "yearBuilt": 1994,
+    "height": null,
+    "latitude": 25.1413,
+    "longitude": 55.1853,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1569069438599-4b719f7463b4?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1569069438599-4b719f7463b4?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1569069438599-4b719f7463b4?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1569069438599-4b719f7463b4?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1569069438599-4b719f7463b4?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1569069438599-4b719f7463b4?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 329,
+    "name": "Persepolis",
+    "location": "Fars Province",
+    "country": "Iran",
+    "continent": "Middle East",
+    "type": "Archaeological Site",
+    "kebabId": "persepolis",
+    "description": "Persepolis once the ceremonial capital of the Achaemenid Empire was founded by Darius I around 518 BCE. Located in present-day Fars Province the ruins include grand staircases imposing columns audience halls (Apadana) intricate reliefs and royal tombs carved into mountainsides. Persepolis was a center for festivals and the official seat for welcoming delegations from across the empire. It was famously sacked by Alexander the Great in 330 BCE. Today Persepolis is a UNESCO World Heritage Site and a timeless testament to the grandeur and artistry of ancient Persia.",
+    "yearBuilt": 518,
+    "height": null,
+    "latitude": 29.9353,
+    "longitude": 52.8916,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1562576605-88930bca8574?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1562576605-88930bca8574?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1562576605-88930bca8574?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1562576605-88930bca8574?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1562576605-88930bca8574?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1562576605-88930bca8574?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 330,
+    "name": "Naqsh-e Jahan Square",
+    "location": "Isfahan",
+    "country": "Iran",
+    "continent": "Middle East",
+    "type": "Square",
+    "kebabId": "naqsh-e-jahan-square",
+    "description": "Naqsh-e Jahan Square (Imam Square) is a monumental urban space in the heart of Isfahan constructed during the reign of Shah Abbas I of the Safavid dynasty. Measuring 160 by 560 meters the square is surrounded by some of Iran's finest architectural sites: the Shah Mosque Sheikh Lotfollah Mosque Ali Qapu Palace and the historic Qeysarieh Bazaar. Naqsh-e Jahan's harmonious design elaborate geometric layout and decorative tilework exemplify the heights of Persian urban planning and Safavid art. Designated as a UNESCO World Heritage Site it remains a vibrant gathering place symbolizing the cultural and historical legacy of Isfahan.",
+    "yearBuilt": 1598,
+    "height": null,
+    "latitude": 32.6572,
+    "longitude": 51.6776,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/30508647/pexels-photo-30508647.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/30508647/pexels-photo-30508647.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/30508647/pexels-photo-30508647.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/30508647/pexels-photo-30508647.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/30508647/pexels-photo-30508647.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/30508647/pexels-photo-30508647.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 331,
+    "name": "Baalbek",
+    "location": "Baalbek",
+    "country": "Lebanon",
+    "continent": "Middle East",
+    "type": "Archaeological Site",
+    "kebabId": "baalbek",
+    "description": "Baalbek located in Lebanon's Beqaa Valley is one of the most impressive and well-preserved Roman archaeological sites in the world. Its monumental temples—dedicated to Jupiter Bacchus and Venus—feature towering columns and elaborate carvings exemplifying Imperial Roman architecture. The ruins are remnants of a settlement with even older Phoenician roots serving as both a historic marvel and a symbol of Lebanon's ancient heritage.",
+    "yearBuilt": 50,
+    "height": null,
+    "latitude": 34.0042,
+    "longitude": 36.2031,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1608221936411-6598e1185e32?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1608221936411-6598e1185e32?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1608221936411-6598e1185e32?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1608221936411-6598e1185e32?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1608221936411-6598e1185e32?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1608221936411-6598e1185e32?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 332,
+    "name": "Cappadocia",
+    "location": "Nevşehir Province",
+    "country": "Turkey",
+    "continent": "Middle East",
+    "type": "Historical Region",
+    "kebabId": "cappadocia",
+    "description": "Cappadocia is a unique historical region in central Turkey renowned for its surreal fairy chimneys extensive cave dwellings and underground cities carved into soft volcanic rock. Over millennia civilizations—from Hittites to early Christians—have left their mark on the landscape making it a UNESCO World Heritage Site. Today it is renowned for its hot air balloon rides above dramatic valleys and ancient troglodyte architecture.",
+    "yearBuilt": 750,
+    "height": null,
+    "latitude": 38.6431,
+    "longitude": 34.8318,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/2668314/pexels-photo-2668314.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/2668314/pexels-photo-2668314.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/2668314/pexels-photo-2668314.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/2668314/pexels-photo-2668314.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/2668314/pexels-photo-2668314.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/2668314/pexels-photo-2668314.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 333,
+    "name": "Ephesus",
+    "location": "İzmir",
+    "country": "Turkey",
+    "continent": "Middle East",
+    "type": "Archaeological Site",
+    "kebabId": "ephesus",
+    "description": "Ephesus is a legendary ancient city near modern-day Selçuk once a flourishing Greek and Roman metropolis and home to the Temple of Artemis—one of the Seven Wonders of the Ancient World. Its extensive ruins include the grand Library of Celsus Theatre and Temple of Hadrian. As a UNESCO World Heritage Site Ephesus is a testament to the region's historical and cultural significance through millennia.",
+    "yearBuilt": 950,
+    "height": null,
+    "latitude": 37.939,
+    "longitude": 27.3414,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1635166045025-b078ac986d77?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1635166045025-b078ac986d77?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1635166045025-b078ac986d77?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1635166045025-b078ac986d77?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1635166045025-b078ac986d77?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1635166045025-b078ac986d77?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 334,
+    "name": "Göbekli Tepe",
+    "location": "Şanlıurfa",
+    "country": "Turkey",
+    "continent": "Middle East",
+    "type": "Archaeological Site",
+    "kebabId": "g-bekli-tepe",
+    "description": "Göbekli Tepe whose name means Potbelly Hill in Turkish is regarded as the world's oldest known monumental sanctuary predating Stonehenge by thousands of years. Situated on a rocky hilltop in Southeastern Anatolia this Neolithic site features massive circular structures built with T-shaped limestone pillars many intricately carved with animal reliefs. The site inhabited from about 9500 BCE to 8000 BCE offers unique insights into prehistoric religion before the widespread adoption of agriculture. Investigations here have revolutionized understanding of the transition from hunter-gatherer to sedentary societies as there is little evidence of agriculture or permanent settlement at the time. Its impressive scale and decorated pillars suggest complex social organization among early humans.",
+    "yearBuilt": 9500,
+    "height": null,
+    "latitude": 37.223,
+    "longitude": 38.9223,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1654346970959-efc9a1edbdc3?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1654346970959-efc9a1edbdc3?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1654346970959-efc9a1edbdc3?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1654346970959-efc9a1edbdc3?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1654346970959-efc9a1edbdc3?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1654346970959-efc9a1edbdc3?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1555993539-1732b0258235",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 335,
+    "name": "Obelisk of Theodosius",
+    "location": "Istanbul",
+    "country": "Turkey",
+    "continent": "Middle East",
+    "type": "Monument",
+    "kebabId": "obelisk-of-theodosius",
+    "description": "The Obelisk of Theodosius is an ancient Egyptian obelisk erected in the Hippodrome of Constantinople by Roman Emperor Theodosius I in 390 CE. Originally from the Temple of Karnak in Luxor Egypt it was transported to Constantinople and placed on a marble pedestal. The obelisk features hieroglyphic inscriptions and stands as a testament to the city's rich history spanning Egyptian Roman Byzantine and Ottoman periods.",
+    "yearBuilt": 390,
+    "height": null,
+    "latitude": 41.0054,
+    "longitude": 28.9768,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1566930066270-a45117abf293?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1566930066270-a45117abf293?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1566930066270-a45117abf293?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1566930066270-a45117abf293?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1566930066270-a45117abf293?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1566930066270-a45117abf293?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 336,
+    "name": "Basilica Cistern",
+    "location": "Istanbul",
+    "country": "Turkey",
+    "continent": "Middle East",
+    "type": "Historical Site",
+    "kebabId": "basilica-cistern",
+    "description": "The Basilica Cistern is the largest of several hundred ancient cisterns that lie beneath the city of Istanbul. Built in the 6th century during the reign of Byzantine Emperor Justinian I it was constructed using 336 columns many of which were salvaged from ruined temples. The cistern features two Medusa head columns at its northwest corner and was used to store water for the Great Palace and surrounding buildings. Today it is a popular tourist attraction known for its atmospheric lighting and mysterious ambiance.",
+    "yearBuilt": 532,
+    "height": null,
+    "latitude": 41.0086,
+    "longitude": 28.9778,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1728361329003-cb7915ce1a9b?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1728361329003-cb7915ce1a9b?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1728361329003-cb7915ce1a9b?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1728361329003-cb7915ce1a9b?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1728361329003-cb7915ce1a9b?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1728361329003-cb7915ce1a9b?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 337,
+    "name": "Topkapi Palace",
+    "location": "Istanbul",
+    "country": "Turkey",
+    "continent": "Middle East",
+    "type": "Palace",
+    "kebabId": "topkapi-palace",
+    "description": "Topkapi Palace is a large museum in Istanbul that was the main residence and administrative headquarters of the Ottoman sultans for approximately 400 years. Built in the 15th century by Mehmed the Conqueror the palace complex includes four main courtyards and many smaller buildings. It houses important relics including the Prophet Muhammad's cloak and sword as well as extensive collections of Ottoman artifacts jewelry and manuscripts. The palace offers stunning views of the Golden Horn and Bosphorus.",
+    "yearBuilt": 1459,
+    "height": null,
+    "latitude": 41.0115,
+    "longitude": 28.9834,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1663213774378-b83b5f0bceb7?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1663213774378-b83b5f0bceb7?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1663213774378-b83b5f0bceb7?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1663213774378-b83b5f0bceb7?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1663213774378-b83b5f0bceb7?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1663213774378-b83b5f0bceb7?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 338,
+    "name": "Galata Tower",
+    "location": "Istanbul",
+    "country": "Turkey",
+    "continent": "Middle East",
+    "type": "Tower",
+    "kebabId": "galata-tower",
+    "description": "The Galata Tower is a medieval stone tower in the Galata quarter of Istanbul. Built in 1348 by the Genoese as part of the defense wall surrounding their colony at Constantinople it stands 67 meters tall and offers panoramic views of the city. The tower has served various purposes throughout history including as a fire lookout and today houses a restaurant and observation deck. It is one of the most recognizable landmarks of Istanbul.",
+    "yearBuilt": 1348,
+    "height": null,
+    "latitude": 41.0256,
+    "longitude": 28.9744,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 339,
+    "name": "Casa Batlló",
+    "location": "Barcelona",
+    "country": "Spain",
+    "continent": "Europe",
+    "type": "Building",
+    "kebabId": "casa-batll",
+    "description": "Casa Batlló is a building in the center of Barcelona designed by Antoni Gaudí. Built between 1904 and 1906 it is considered one of his masterpieces. The building features an undulating stone facade with balconies that look like masks and a roof that resembles a dragon's back. The interior is equally imaginative with curved walls and ceilings organic shapes and extensive use of mosaic tiles. It is a UNESCO World Heritage Site and one of the most visited attractions in Barcelona.",
+    "yearBuilt": 1906,
+    "height": null,
+    "latitude": 41.3917,
+    "longitude": 2.165,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1587043211963-0352f1528f6a?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1587043211963-0352f1528f6a?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1587043211963-0352f1528f6a?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1587043211963-0352f1528f6a?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1587043211963-0352f1528f6a?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1587043211963-0352f1528f6a?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 340,
+    "name": "Arc de Triomf Barcelona",
+    "location": "Barcelona",
+    "country": "Spain",
+    "continent": "Europe",
+    "type": "Monument",
+    "kebabId": "arc-de-triomf-barcelona",
+    "description": "The Arc de Triomf is a triumphal arch in Barcelona built as the main entrance to the 1888 Barcelona World Fair. Designed by architect Josep Vilaseca i Casanovas it features a red brickwork facade with stone sculptures and reliefs. Unlike the Parisian Arc de Triomphe this arch was built as a temporary structure but was preserved due to its popularity. It stands at the intersection of Passeig de Lluís Companys and Passeig de Sant Joan.",
+    "yearBuilt": 1888,
+    "height": null,
+    "latitude": 41.3911,
+    "longitude": 2.1808,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1656062597132-1c28430c3b84?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1656062597132-1c28430c3b84?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1656062597132-1c28430c3b84?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1656062597132-1c28430c3b84?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1656062597132-1c28430c3b84?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1656062597132-1c28430c3b84?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 341,
+    "name": "Ronda",
+    "location": "Málaga",
+    "country": "Spain",
+    "continent": "Europe",
+    "type": "Historical Site",
+    "kebabId": "ronda",
+    "description": "Ronda is a mountaintop city in Málaga province known for its dramatic location on a deep gorge. The city is divided by the El Tajo gorge with the Puente Nuevo bridge spanning the 120-meter-deep chasm. Ronda is one of Spain's oldest cities with origins dating back to the 6th century BCE. It features well-preserved Moorish architecture including the Arab Baths and the Mondragón Palace. The city's dramatic setting and rich history make it a popular tourist destination.",
+    "yearBuilt": 600,
+    "height": null,
+    "latitude": 36.742,
+    "longitude": -5.1661,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1728813359280-e80d5aca5f40?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1728813359280-e80d5aca5f40?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1728813359280-e80d5aca5f40?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1728813359280-e80d5aca5f40?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1728813359280-e80d5aca5f40?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1728813359280-e80d5aca5f40?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 342,
+    "name": "Plaza de España Sevilla",
+    "location": "Sevilla",
+    "country": "Spain",
+    "continent": "Europe",
+    "type": "Square",
+    "kebabId": "plaza-de-espa-a-sevilla",
+    "description": "Plaza de España is a plaza in the Parque de María Luisa in Seville built in 1928 for the Ibero-American Exposition of 1929. It is a landmark example of the Regionalism Architecture mixing elements of the Renaissance Revival and Moorish Revival styles. The plaza is a huge half-circle with buildings continually running around the edge accessible over the moat by numerous bridges representing the four ancient kingdoms of Spain.",
+    "yearBuilt": 1928,
+    "height": null,
+    "latitude": 37.3772,
+    "longitude": -5.9869,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1636060805221-6859749cdcfb?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1636060805221-6859749cdcfb?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1636060805221-6859749cdcfb?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1636060805221-6859749cdcfb?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1636060805221-6859749cdcfb?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1636060805221-6859749cdcfb?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 343,
+    "name": "Jardin Majorelle",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Garden",
+    "kebabId": "jardin-majorelle",
+    "description": "Jardin Majorelle is a two-and-a-half-acre botanical garden and artist's landscape garden in Marrakech Morocco. It was designed by the expatriate French artist Jacques Majorelle in the 1920s and 1930s. The garden has been open to the public since 1947. Since 1980 the garden has been owned by Yves Saint-Laurent and Pierre Bergé. The garden is a popular tourist attraction and is known for its distinctive blue color.",
+    "yearBuilt": 1920,
+    "height": null,
+    "latitude": 31.6415,
+    "longitude": -7.9891,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1729456229097-e60798212180?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1729456229097-e60798212180?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1729456229097-e60798212180?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1729456229097-e60798212180?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1729456229097-e60798212180?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1729456229097-e60798212180?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 344,
+    "name": "Bahia Palace",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Palace",
+    "kebabId": "bahia-palace",
+    "description": "The Bahia Palace is a palace and a set of gardens located in Marrakech Morocco. It was built in the late 19th century by Si Moussa grand vizier of the sultan for his personal use. The palace is set in extensive gardens and contains a riad garden with rooms opening onto courtyards. The palace is a popular tourist attraction and is known for its beautiful architecture and gardens.",
+    "yearBuilt": 1894,
+    "height": null,
+    "latitude": 31.6295,
+    "longitude": -7.9811,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 345,
+    "name": "Medersa Ben Youssef",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Madrasa",
+    "kebabId": "medersa-ben-youssef",
+    "description": "The Medersa Ben Youssef is a madrasa in the medina quarter of Marrakech Morocco. It was the largest madrasa in Morocco and is considered one of the finest examples of Moroccan architecture. The madrasa was built by the Saadian sultan Abdallah al-Ghalib in 1564-1565. The building is known for its beautiful courtyard with a large pool and its intricate stucco and tile work.",
+    "yearBuilt": 1565,
+    "height": null,
+    "latitude": 31.6339,
+    "longitude": -7.9861,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1719084198651-5ac167cb3e6e?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1719084198651-5ac167cb3e6e?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1719084198651-5ac167cb3e6e?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1719084198651-5ac167cb3e6e?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1719084198651-5ac167cb3e6e?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1719084198651-5ac167cb3e6e?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 346,
+    "name": "Koutoubia Mosque",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Mosque",
+    "kebabId": "koutoubia-mosque",
+    "description": "The Koutoubia Mosque is the largest mosque in Marrakech Morocco. The mosque was completed under the reign of the Almohad Caliph Yaqub al-Mansur and was used as a model for the Giralda in Seville and for the Hassan Tower in Rabat. The mosque is known for its distinctive minaret which is 77 meters tall and is decorated with geometric patterns and calligraphy.",
+    "yearBuilt": 1158,
+    "height": null,
+    "latitude": 31.6245,
+    "longitude": -7.9896,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1716146743408-474521ee8039?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1716146743408-474521ee8039?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1716146743408-474521ee8039?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1716146743408-474521ee8039?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1716146743408-474521ee8039?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1716146743408-474521ee8039?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 347,
+    "name": "Jardin Secret",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Garden",
+    "kebabId": "jardin-secret",
+    "description": "Jardin Secret is a garden in the medina of Marrakech Morocco. The garden was created in the 16th century and was restored in the 21st century. The garden is divided into two parts: an Islamic garden and an exotic garden. The Islamic garden features geometric patterns and fountains while the exotic garden contains plants from around the world. The garden is a peaceful oasis in the bustling medina.",
+    "yearBuilt": 1500,
+    "height": null,
+    "latitude": 31.6339,
+    "longitude": -7.9861,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.unsplash.com/photo-1692089265753-de18d2e6c559?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.unsplash.com/photo-1692089265753-de18d2e6c559?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.unsplash.com/photo-1692089265753-de18d2e6c559?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.unsplash.com/photo-1692089265753-de18d2e6c559?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.unsplash.com/photo-1692089265753-de18d2e6c559?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.unsplash.com/photo-1692089265753-de18d2e6c559?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
+      "photographer": "",
+      "photographerUrl": ""
+    }
+  },
+  {
+    "id": 348,
+    "name": "El Badi Palace",
+    "location": "Marrakech",
+    "country": "Morocco",
+    "continent": "Africa",
+    "type": "Palace",
+    "kebabId": "el-badi-palace",
+    "description": "El Badi Palace is a ruined palace in Marrakech Morocco. The palace was built by the Saadian sultan Ahmad al-Mansur in the late 16th century. The palace was known for its beautiful architecture and was considered one of the most magnificent palaces in the world. The palace was destroyed in the 17th century and today only ruins remain. The ruins are still impressive and give visitors a sense of the palace's former grandeur.",
+    "yearBuilt": 1578,
+    "height": null,
+    "latitude": 31.6295,
+    "longitude": -7.9811,
+    "images": {
+      "thumbnail": {
+        "webp": "https://images.pexels.com/photos/15260622/pexels-photo-15260622.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80",
+        "jpg": "https://images.pexels.com/photos/15260622/pexels-photo-15260622.jpeg?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      },
+      "medium": {
+        "webp": "https://images.pexels.com/photos/15260622/pexels-photo-15260622.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85",
+        "jpg": "https://images.pexels.com/photos/15260622/pexels-photo-15260622.jpeg?w=800&h=600&fit=crop&crop=center&auto=format&q=85"
+      },
+      "large": {
+        "webp": "https://images.pexels.com/photos/15260622/pexels-photo-15260622.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90",
+        "jpg": "https://images.pexels.com/photos/15260622/pexels-photo-15260622.jpeg?w=1200&h=900&fit=crop&crop=center&auto=format&q=90"
+      }
+    },
+    "attribution": {
+      "source": "Unsplash",
+      "photoId": "1524231757912-21f4fe3a7200",
+      "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200",
       "photographer": "",
       "photographerUrl": ""
     }
