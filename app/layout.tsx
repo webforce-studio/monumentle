@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Providers } from "./providers"
 import { Footer } from "@/components/footer"
-import { AdvancedCookieConsent, SimpleCookieConsent } from "@/components/cookie-consent"
+
 import { GoogleAdSenseAuto } from "@/components/google-adsense-auto"
 
 export const metadata: Metadata = {
@@ -408,12 +408,7 @@ export default function RootLayout({
       <body>
         <Providers>
           {children}
-          {/* Cookie Consent - Choose one option */}
-          {/* Option 1: Simple Cookie Consent (uncomment to use) */}
-          {/* <SimpleCookieConsent /> */}
-          
-          {/* Option 2: Advanced Cookie Consent (recommended) */}
-          <AdvancedCookieConsent />
+          {/* Cookie Consent handled by Google CMP */}
           
           {/* Google AdSense Auto Ads */}
           <GoogleAdSenseAuto />
