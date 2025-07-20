@@ -58,7 +58,7 @@ const nextConfig = {
     ]
   },
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
     optimizePackageImports: ['@radix-ui/react-icons'],
   },
   compiler: {
