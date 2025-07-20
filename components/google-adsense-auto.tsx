@@ -2,6 +2,13 @@
 
 import Script from 'next/script'
 
+// TypeScript declarations for Google AdSense
+declare global {
+  interface Window {
+    adsbygoogle: any[]
+  }
+}
+
 /**
  * Google AdSense Auto Ads Component
  * 
@@ -27,7 +34,26 @@ export function GoogleAdSenseAuto() {
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `
-          (adsbygoogle = window.adsbygoogle || []).push({});
+          // Wait for the main AdSense script to load
+          function initAutoAds() {
+            if (typeof window !== 'undefined' && window.adsbygoogle) {
+              try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              } catch (error) {
+                console.warn('AdSense Auto Ads initialization error:', error);
+              }
+            } else {
+              // Retry after a short delay if not ready
+              setTimeout(initAutoAds, 100);
+            }
+          }
+          
+          // Initialize when DOM is ready
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initAutoAds);
+          } else {
+            initAutoAds();
+          }
         `,
       }}
     />
