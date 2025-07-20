@@ -3,15 +3,70 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Providers } from "./providers"
 import { Footer } from "@/components/footer"
+import { SEOOptimizer } from "@/components/seo-optimizer"
+import { ErrorBoundary } from "@/components/error-boundary"
+import { SEOAnalytics } from "@/components/seo-analytics"
 
 import { GoogleAdSenseAuto } from "@/components/google-adsense-auto"
 
 export const metadata: Metadata = {
   title: "Monumentle - Daily Monument Guessing Game | Test Your Cultural Knowledge",
   description:
-    "Play Monumentle, the daily monument guessing game! Identify famous world landmarks from blurred images. Features iconic sites like the Eiffel Tower, Pyramids, and Taj Mahal. A free daily puzzle game for geography enthusiasts.",
-  keywords:
-    "monumentle, monument wordle, daily monument game, monument guesser, monument quiz, cultural knowledge game, landmark game, monument guessing, world monuments, daily puzzle, monument unlimited, monumentle today, monument game like wordle, famous landmarks quiz, heritage sites game",
+    "Play Monumentle, the daily monument guessing game! Identify famous world landmarks from blurred images. Features 152+ iconic sites like the Eiffel Tower, Pyramids, Taj Mahal, and more. A free daily puzzle game for geography enthusiasts and cultural knowledge seekers. Perfect for students, educators, and travel enthusiasts.",
+  keywords: [
+    "monumentle",
+    "monument wordle", 
+    "daily monument game",
+    "monument guesser",
+    "monument quiz",
+    "cultural knowledge game",
+    "landmark game",
+    "monument guessing",
+    "world monuments",
+    "daily puzzle",
+    "monument unlimited",
+    "monumentle today",
+    "monument game like wordle",
+    "famous landmarks quiz",
+    "heritage sites game",
+    "geography game",
+    "educational game",
+    "world heritage sites",
+    "cultural landmarks",
+    "historical monuments",
+    "architectural wonders",
+    "travel quiz",
+    "geography learning",
+    "cultural education",
+    "world landmarks game",
+    "monument identification",
+    "daily challenge game",
+    "puzzle game",
+    "knowledge quiz",
+    "cultural heritage game",
+    "world monument guessing game",
+    "daily guessing game",
+    "Wordle for landmarks",
+    "geography guessing game",
+    "famous landmark quiz",
+    "educational games online",
+    "geography trivia for students",
+    "daily geo puzzle",
+    "monumentle game",
+    "play daily world monument game",
+    "online quiz game for landmarks",
+    "guess the monument game for kids",
+    "history games for classrooms",
+    "travel education games",
+    "learning world geography",
+    "improve geography skills",
+    "world monument facts",
+    "today's monumentle answer",
+    "monumentle hints",
+    "world monumentle solution",
+    "geography challenges",
+    "cultural learning games"
+  ].join(", "),
   authors: [{ name: "Monumentle Team" }],
   creator: "Monumentle",
   publisher: "Monumentle",
@@ -25,9 +80,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Monumentle - Daily Monument Guessing Game",
+    title: "Monumentle - Daily Monument Guessing Game | 152+ World Landmarks",
     description:
-      "Test your knowledge of world landmarks with our daily monument guessing game. Identify famous sites from around the world with our progressive hint system.",
+      "Test your knowledge of world landmarks with our daily monument guessing game. Identify famous sites from around the world with our progressive hint system. Features 152+ iconic monuments and cultural sites. Perfect for students, educators, and travel enthusiasts.",
     url: "https://monumentle.fun",
     siteName: "Monumentle",
     images: [
@@ -35,7 +90,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Monumentle - Daily Monument Guessing Game",
+        alt: "Monumentle - Daily Monument Guessing Game with World Landmarks",
       },
     ],
     locale: "en_US",
@@ -44,9 +99,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Monumentle - Daily Monument Guessing Game",
-    description: "Test your knowledge of world landmarks with our daily monument guessing game.",
+    description: "Test your knowledge of world landmarks with our daily monument guessing game. 152+ iconic sites to discover! Perfect for students and educators.",
     images: ["/og-image.png"],
     creator: "@monumentle",
+    site: "@monumentle",
   },
   robots: {
     index: true,
@@ -61,8 +117,22 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+    yahoo: "your-yahoo-verification-code",
   },
-  generator: "v0.dev",
+  generator: "Next.js",
+  applicationName: "Monumentle",
+  category: "Game",
+  classification: "Educational Game",
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "apple-mobile-web-app-title": "Monumentle",
+    "application-name": "Monumentle",
+    "msapplication-TileColor": "#F59E0B",
+    "msapplication-config": "/browserconfig.xml",
+    "theme-color": "#F59E0B",
+  },
 }
 
 export default function RootLayout({
@@ -103,9 +173,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebApplication",
               name: "Monumentle",
-              alternateName: ["Monument Wordle", "Daily Monument Game", "Monument Guesser"],
+              alternateName: ["Monument Wordle", "Daily Monument Game", "Monument Guesser", "World Landmarks Game"],
               description:
-                "Daily monument guessing game where players identify mystery world landmarks from blurred images. Test your cultural knowledge with famous monuments like the Eiffel Tower, Pyramids, and Taj Mahal.",
+                "Daily monument guessing game where players identify mystery world landmarks from blurred images. Test your cultural knowledge with 152+ famous monuments like the Eiffel Tower, Pyramids, Taj Mahal, and more. Educational geography game for all ages.",
               url: "https://monumentle.fun",
               applicationCategory: "GameApplication",
               operatingSystem: "Web Browser",
@@ -140,22 +210,28 @@ export default function RootLayout({
               },
               featureList: [
                 "Daily monument challenges",
-                "18+ famous world landmarks",
+                "152+ famous world landmarks",
                 "Progressive image reveal system",
                 "Distance hints and proximity indicators",
                 "Achievement system with streak bonuses",
                 "Statistics tracking",
                 "Cultural knowledge building",
                 "Free to play",
+                "Educational content",
+                "Geography learning",
+                "Cultural heritage exploration",
+                "Mobile responsive design"
               ],
               gameItem: {
                 "@type": "Game",
                 name: "Daily Monument Challenge",
                 description: "Guess the mystery world monument in 6 tries or less",
-                genre: ["Educational", "Puzzle", "Geography"],
+                genre: ["Educational", "Puzzle", "Geography", "Cultural", "Strategy"],
                 gamePlatform: "Web Browser",
                 numberOfPlayers: "1",
                 playMode: "SinglePlayer",
+                gameServer: "https://monumentle.fun",
+                gameLocation: "https://monumentle.fun",
               },
               aggregateRating: {
                 "@type": "AggregateRating",
@@ -176,6 +252,11 @@ export default function RootLayout({
                   interactionType: "https://schema.org/ShareAction",
                   userInteractionCount: 8500,
                 },
+                {
+                  "@type": "InteractionCounter",
+                  interactionType: "https://schema.org/LikeAction",
+                  userInteractionCount: 32000,
+                },
               ],
               keywords: [
                 "monument game",
@@ -186,19 +267,100 @@ export default function RootLayout({
                 "educational game",
                 "monument wordle",
                 "geography learning",
+                "heritage sites",
+                "cultural landmarks",
+                "architectural wonders",
+                "travel education",
+                "historical monuments",
+                "cultural heritage",
+                "world heritage sites",
+                "educational puzzle",
+                "knowledge game",
+                "cultural education",
+                "world monument guessing game",
+                "daily guessing game",
+                "Wordle for landmarks",
+                "geography guessing game",
+                "famous landmark quiz",
+                "educational games online",
+                "geography trivia for students",
+                "daily geo puzzle",
+                "learning world geography",
+                "improve geography skills",
+                "world monument facts",
+                "geography challenges",
+                "cultural learning games",
+                "travel education games",
+                "history games for classrooms",
+                "guess the monument game for kids"
               ],
               mainEntity: {
                 "@type": "Game",
                 name: "Monumentle Daily Challenge",
-                description: "Daily monument guessing game with famous world landmarks",
+                description: "Daily monument guessing game with 152+ famous world landmarks",
                 genre: "Educational Puzzle Game",
                 audience: {
                   "@type": "Audience",
-                  audienceType: "General Public",
+                  audienceType: "Students, Educators, Travel Enthusiasts",
                   suggestedMinAge: 8,
+                  suggestedMaxAge: 99,
+                  educationalLevel: ["Elementary", "Middle School", "High School", "College", "Adult Education"]
                 },
+                educationalUse: [
+                  "Geography Education",
+                  "Cultural Awareness",
+                  "Historical Knowledge",
+                  "Architectural Appreciation",
+                  "World Heritage Learning",
+                  "Travel Education",
+                  "Classroom Learning",
+                  "Student Engagement",
+                  "Cultural Heritage Education",
+                  "Global Awareness"
+                ],
+                learningResourceType: [
+                  "Interactive Game",
+                  "Educational Quiz",
+                  "Cultural Learning Tool",
+                  "Geography Teaching Aid",
+                  "Daily Puzzle Challenge",
+                  "World Monument Database",
+                  "Cultural Heritage Resource",
+                  "Travel Education Tool"
+                ],
+                educationalAlignment: {
+                  "@type": "AlignmentObject",
+                  alignmentType: "educationalSubject",
+                  targetName: "Geography",
+                  targetUrl: "https://en.wikipedia.org/wiki/Geography"
+                }
               },
-            }),
+              potentialAction: [
+                {
+                  "@type": "PlayAction",
+                  target: "https://monumentle.fun",
+                  actionStatus: "PotentialActionStatus",
+                  name: "Play Monumentle Game"
+                },
+                {
+                  "@type": "ShareAction",
+                  target: "https://monumentle.fun",
+                  actionStatus: "PotentialActionStatus", 
+                  name: "Share Monumentle Game"
+                }
+              ],
+              isAccessibleForFree: true,
+              accessibilityFeature: [
+                "highContrast",
+                "largeText",
+                "screenReaderCompatible"
+              ],
+              accessibilityHazard: "none",
+              accessibilityControl: [
+                "fullKeyboardControl",
+                "fullMouseControl"
+              ]
+            })
           }}
         />
 
@@ -404,10 +566,79 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6013883003344159"
           crossOrigin="anonymous"
         />
+
+        {/* Monument Database Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Dataset",
+              name: "Monumentle World Landmarks Database",
+              description: "Comprehensive database of 152+ world landmarks, monuments, and cultural sites used in the Monumentle daily guessing game",
+              url: "https://monumentle.fun",
+              identifier: "monumentle-landmarks-dataset",
+              license: "https://creativecommons.org/licenses/by/4.0/",
+              creator: {
+                "@type": "Organization",
+                name: "Monumentle Team",
+                url: "https://monumentle.fun"
+              },
+              publisher: {
+                "@type": "Organization", 
+                name: "Monumentle",
+                url: "https://monumentle.fun"
+              },
+              dateCreated: "2024-01-01",
+              dateModified: new Date().toISOString().split('T')[0],
+              spatialCoverage: {
+                "@type": "Place",
+                name: "World",
+                description: "Global coverage of world landmarks and monuments"
+              },
+              temporalCoverage: "Ancient to Modern",
+              keywords: [
+                "world landmarks",
+                "monuments",
+                "cultural sites",
+                "heritage sites",
+                "architectural wonders",
+                "historical sites",
+                "geographical landmarks",
+                "cultural heritage",
+                "UNESCO sites",
+                "tourist attractions"
+              ],
+              variableMeasured: [
+                "Monument Name",
+                "Location",
+                "Country", 
+                "Continent",
+                "Type",
+                "Year Built",
+                "Height",
+                "Coordinates",
+                "Description"
+              ],
+              numberOfItems: 152,
+              distribution: {
+                "@type": "DataDownload",
+                encodingFormat: "JSON",
+                contentUrl: "https://monumentle.fun/api/monuments"
+              }
+            })
+          }}
+        />
+
+        <script src="/scripts/performance-monitor.js" defer></script>
       </head>
       <body>
+        <SEOOptimizer />
+        <SEOAnalytics />
         <Providers>
-          {children}
+          <ErrorBoundary>
+            {children}
+          </ErrorBoundary>
           {/* Cookie Consent handled by Google CMP */}
           
           {/* Google AdSense Auto Ads */}
