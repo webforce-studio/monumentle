@@ -6,7 +6,6 @@ import { Footer } from "@/components/footer"
 import { SEOOptimizer } from "@/components/seo-optimizer"
 import { ErrorBoundary } from "@/components/error-boundary"
 import { SEOAnalytics } from "@/components/seo-analytics"
-import { ConsentManager } from "@/components/consent-manager"
 
 import { GoogleAdSenseAuto } from "@/components/google-adsense-auto"
 
@@ -652,7 +651,6 @@ export default function RootLayout({
           {/* Google AdSense Auto Ads */}
           <GoogleAdSenseAuto />
           <Footer />
-          <ConsentManager />
         </Providers>
       </body>
     </html>

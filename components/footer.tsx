@@ -59,12 +59,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.supercardle.fun"
+                  href="https://www.flagguesser.fun"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-amber-400 transition-colors"
                 >
-                  Supercardle 🏎️
+                  Flag Guesser 🏳️
                 </a>
               </li>
               <li>
@@ -75,6 +75,16 @@ export function Footer() {
                   className="hover:text-amber-400 transition-colors"
                 >
                   Classic Snake 🐍
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.supercardle.fun"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  Supercardle 🏎️
                 </a>
               </li>
             </ul>
