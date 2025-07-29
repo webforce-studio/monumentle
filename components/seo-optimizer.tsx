@@ -7,7 +7,7 @@ export function SEOOptimizer() {
     // Preload critical resources
     const preloadLinks = [
       { rel: 'preload', href: '/og-image.png', as: 'image' },
-      { rel: 'preload', href: '/logo.png', as: 'image' },
+      { rel: 'preload', href: '/Monumentle.png', as: 'image' },
       { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
       { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' },
       { rel: 'dns-prefetch', href: 'https://images.unsplash.com' },

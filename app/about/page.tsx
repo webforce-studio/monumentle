@@ -43,7 +43,7 @@ export default function About() {
           <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg mb-12">
             <div className="text-center mb-8">
               <div className="relative w-24 h-24 mx-auto mb-4">
-                <Image src="/logo.png" alt="Monumentle Logo" fill className="object-contain" />
+                <Image src="/Monumentle.png" alt="Monumentle Logo" fill className="object-contain" />
               </div>
             </div>
 

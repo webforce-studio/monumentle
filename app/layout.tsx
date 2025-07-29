@@ -8,6 +8,8 @@ import { ErrorBoundary } from "@/components/error-boundary"
 import { SEOAnalytics } from "@/components/seo-analytics"
 
 import { GoogleAdSenseAuto } from "@/components/google-adsense-auto"
+import { GoogleAnalytics } from "@/components/google-analytics"
+import { BlockingCookieConsent } from "@/components/cookie-consent-blocking"
 
 export const metadata: Metadata = {
   title: "Monumentle - Daily Monument Guessing Game | Test Your Cultural Knowledge",
@@ -197,7 +199,7 @@ export default function RootLayout({
                 url: "https://monumentle.fun",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://monumentle.fun/logo.png",
+                  url: "https://monumentle.fun/Monumentle.png",
                   width: 512,
                   height: 512,
                 },
@@ -453,7 +455,7 @@ export default function RootLayout({
               url: "https://monumentle.fun",
               logo: {
                 "@type": "ImageObject",
-                url: "https://monumentle.fun/logo.png",
+                url: "https://monumentle.fun/Monumentle.png",
                 width: 512,
                 height: 512,
               },
@@ -525,46 +527,7 @@ export default function RootLayout({
 
         {/* Google Analytics - GA4 Implementation */}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <>
-            {/* Google tag (gtag.js) */}
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  
-                  // Initialize Consent Mode v2 with analytics enabled by default
-                  gtag('consent', 'default', {
-                    analytics_storage: 'granted',
-                    ad_storage: 'denied',
-                    ad_user_data: 'denied',
-                    ad_personalization: 'denied',
-                    functionality_storage: 'granted',
-                    personalization_storage: 'denied'
-                  });
-                  
-                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
-                    anonymize_ip: true,
-                    allow_google_signals: false,
-                    allow_ad_personalization_signals: false,
-                    page_title: document.title,
-                    page_location: window.location.href
-                  });
-                  
-                  // Track page views
-                  gtag('event', 'page_view', {
-                    page_title: document.title,
-                    page_location: window.location.href
-                  });
-                `,
-              }}
-            />
-          </>
+          <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         )}
 
         {/* Google AdSense */}
@@ -646,10 +609,8 @@ export default function RootLayout({
           <ErrorBoundary>
             {children}
           </ErrorBoundary>
-          {/* Cookie Consent handled by Google CMP */}
-          
-          {/* Google AdSense Auto Ads */}
           <GoogleAdSenseAuto />
+          <BlockingCookieConsent />
           <Footer />
         </Providers>
       </body>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -8,7 +9,9 @@ export function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🏛️</span>
+              <div className="relative w-8 h-8">
+                <Image src="/Monumentle.png" alt="Monumentle" fill className="object-contain" />
+              </div>
               <h3 className="text-xl font-bold text-amber-400">Monumentle</h3>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">
@@ -90,10 +93,67 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Legal Links */}
+          {/* Friends Links */}
           <div>
-            <h4 className="font-semibold text-amber-400 mb-4">Legal</h4>
+            <h4 className="font-semibold text-amber-400 mb-4">Friends</h4>
             <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://browse-ai.tools/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  Browse AI Tools 🤖
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.stop-watch.online/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  Stopwatch Online ⏱️
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flip-a-coin.online/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  Flip A Coin Online 🪙
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.wheel-spinner.online/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  Wheel Spinner Online 🎡
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-slate-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="text-center md:text-left">
+            <p className="text-sm text-slate-400">© 2025 Webforce Studio. All rights reserved.</p>
+            <p className="text-xs text-slate-500 mt-2">Celebrating world heritage through interactive learning</p>
+          </div>
+          <div className="mt-4 md:mt-0">
+            <ul className="flex space-x-6 text-sm">
+              <li>
+                <Link href="/contact" className="hover:text-amber-400 transition-colors">
+                  Contact Us
+                </Link>
+              </li>
               <li>
                 <Link href="/privacy" className="hover:text-amber-400 transition-colors">
                   Privacy Policy
@@ -104,19 +164,8 @@ export function Footer() {
                   Terms of Service
                 </Link>
               </li>
-              <li>
-                <Link href="/contact" className="hover:text-amber-400 transition-colors">
-                  Contact Us
-                </Link>
-              </li>
             </ul>
           </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="border-t border-slate-700 mt-8 pt-8 text-center">
-          <p className="text-sm text-slate-400">© 2025 Webforce Studio. All rights reserved.</p>
-          <p className="text-xs text-slate-500 mt-2">Celebrating world heritage through interactive learning</p>
         </div>
       </div>
     </footer>

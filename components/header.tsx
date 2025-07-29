@@ -32,7 +32,7 @@ export function Header({
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2">
             <div className="relative w-10 h-10">
-              <Image src="/logo.png" alt="Monumentle" fill className="object-contain" />
+              <Image src="/Monumentle.png" alt="Monumentle" fill className="object-contain" />
             </div>
             <Link href="/" className="text-3xl font-bold text-amber-500 monument-title">
               Monumentle
