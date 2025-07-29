@@ -82,12 +82,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.supercardle.fun"
+                  href="https://numlink.fun"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-amber-400 transition-colors"
                 >
-                  Supercardle 🏎️
+                  Numlink 🔢
                 </a>
               </li>
             </ul>

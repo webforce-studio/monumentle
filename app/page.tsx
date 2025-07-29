@@ -1522,33 +1522,33 @@ Play at: ${url}`)
                 </div>
               </a>
 
-              {/* Supercardle (centered below) */}
+              {/* Numlink (centered below) */}
             </div>
             <div className="flex justify-center mt-6">
-              <a href="https://www.supercardle.fun" target="_blank" rel="noopener noreferrer" className="block group w-full md:w-1/2">
+              <a href="https://numlink.fun" target="_blank" rel="noopener noreferrer" className="block group w-full md:w-1/2">
                 <div
                   className={`h-full rounded-xl overflow-hidden border-2 transition-all duration-300 ${
                     darkMode
-                      ? "bg-slate-900 border-red-600/30 hover:border-red-500"
-                      : "bg-gradient-to-br from-slate-50 to-slate-100 border-red-400/30 hover:border-red-500"
+                      ? "bg-slate-900 border-blue-600/30 hover:border-blue-500"
+                      : "bg-gradient-to-br from-slate-50 to-slate-100 border-blue-400/30 hover:border-blue-500"
                   }`}
                 >
                   <div className="p-6">
                     <div className="flex items-center justify-center mb-4">
-                      <div className="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center mr-3">
-                        <span className="text-2xl">🏎️</span>
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center mr-3">
+                        <span className="text-white font-bold text-lg">123</span>
                       </div>
-                      <h3 className="text-2xl font-bold text-red-500">Supercardle</h3>
+                      <h3 className="text-2xl font-bold text-blue-500">Numlink</h3>
                     </div>
                     <div className={`text-center mb-4 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      <p>Daily supercar guessing game! Test your knowledge of exotic and luxury cars.</p>
+                      <p>Connect the numbers in this addictive puzzle game! Link matching numbers to clear the board.</p>
                     </div>
                     <div className="flex justify-center">
                       <span
                         className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-medium ${
                           darkMode
-                            ? "bg-red-900/30 text-red-400 group-hover:bg-red-800/50"
-                            : "bg-red-100 text-red-700 group-hover:bg-red-200"
+                            ? "bg-blue-900/30 text-blue-400 group-hover:bg-blue-800/50"
+                            : "bg-blue-100 text-blue-700 group-hover:bg-blue-200"
                         }`}
                       >
                         Play Now →
