@@ -6,6 +6,7 @@ import Script from 'next/script'
 declare global {
   interface Window {
     adsbygoogle: any[]
+    __adsbygoogleInitialized?: boolean
   }
 }
 
@@ -38,13 +39,15 @@ export function GoogleAdSenseAuto() {
           function initAutoAds() {
             if (typeof window !== 'undefined' && window.adsbygoogle) {
               try {
+                if (window.__adsbygoogleInitialized) return;
                 (adsbygoogle = window.adsbygoogle || []).push({});
+                window.__adsbygoogleInitialized = true;
               } catch (error) {
                 console.warn('AdSense Auto Ads initialization error:', error);
               }
             } else {
               // Retry after a short delay if not ready
-              setTimeout(initAutoAds, 100);
+              setTimeout(initAutoAds, 300);
             }
           }
           

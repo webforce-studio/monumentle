@@ -59,7 +59,8 @@ const nextConfig = {
   },
   experimental: {
     optimizeCss: false,
-    optimizePackageImports: ['@radix-ui/react-icons'],
+    // Disable vendor-chunk optimization to avoid missing vendor-chunk errors in dev
+    optimizePackageImports: [],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',

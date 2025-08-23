@@ -47,6 +47,12 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --cookie-background: 0 0% 100%;
+    --cookie-foreground: 222.2 84% 4.9%;
+    --cookie-primary: 222.2 47.4% 11.2%;
+    --cookie-primary-foreground: 210 40% 98%;
+    --cookie-muted-foreground: 215.4 16.3% 46.9%;
+    --cookie-border: 214.3 31.8% 91.4%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -81,6 +87,12 @@ body {
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --cookie-background: 222.2 84% 4.9%;
+    --cookie-foreground: 210 40% 98%;
+    --cookie-primary: 210 40% 98%;
+    --cookie-primary-foreground: 222.2 47.4% 11.2%;
+    --cookie-muted-foreground: 217.2 32.6% 17.5%;
+    --cookie-border: 217.2 32.6% 17.5%;
   }
 }
 
@@ -112,4 +124,56 @@ body {
 .monument-heading {
   font-family: "Crimson Text", serif;
   font-weight: 600;
+}
+
+.cookie-consent-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: hsl(var(--cookie-background));
+  border-top: 1px solid hsl(var(--cookie-border));
+  box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.cookie-consent-button {
+  background: hsl(var(--cookie-primary));
+  color: hsl(var(--cookie-primary-foreground));
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cookie-consent-button:hover {
+  opacity: 0.9;
+}
+
+.cookie-consent-decline {
+  background: transparent;
+  color: hsl(var(--cookie-muted-foreground));
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: 1px solid hsl(var(--cookie-border));
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cookie-consent-decline:hover {
+  background-color: hsl(var(--cookie-border));
+}
+
+@media (max-width: 768px) {
+  .cookie-consent-container {
+    padding: 1rem;
+  }
+  .cookie-consent-button,
+  .cookie-consent-decline {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }

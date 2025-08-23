@@ -22,7 +22,7 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
         src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
       />
       
-      {/* Google Analytics Initialization - Standard Format */}
+      {/* Google Analytics Initialization - Consent Mode v2, denied by default */}
       <Script
         id="google-analytics"
         strategy="afterInteractive"
@@ -32,13 +32,13 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            // Initialize Consent Mode v2 BEFORE config
+            // Consent Mode v2 - denied by default until user accepts
             gtag('consent', 'default', {
               analytics_storage: 'denied',
               ad_storage: 'denied',
               ad_user_data: 'denied',
               ad_personalization: 'denied',
-              functionality_storage: 'denied',
+              functionality_storage: 'granted',
               personalization_storage: 'denied',
               wait_for_update: 500
             });

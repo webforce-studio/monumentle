@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Providers } from "./providers"
 import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
 import { SEOOptimizer } from "@/components/seo-optimizer"
 import { ErrorBoundary } from "@/components/error-boundary"
 import { SEOAnalytics } from "@/components/seo-analytics"
@@ -163,6 +164,18 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
+        />
+
+
+        {/* Leaflet CSS for maps */}
+        <link
+          rel="preload"
+          as="style"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         />
 
 
@@ -600,12 +613,14 @@ export default function RootLayout({
           }}
         />
 
-        <script src="/scripts/performance-monitor.js" defer></script>
+        {/* Disabled in dev: missing file triggers 404; re-enable when added */}
+        {/* <script src="/scripts/performance-monitor.js" defer></script> */}
       </head>
       <body>
         <SEOOptimizer />
         <SEOAnalytics />
         <Providers>
+          <Header />
           <ErrorBoundary>
             {children}
           </ErrorBoundary>

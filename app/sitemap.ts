@@ -55,15 +55,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/regions`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
   ]
 
-  // Dynamic monument pages (if you have individual monument pages)
-  const monumentPages = monuments.slice(0, 50).map((monument) => ({
-    url: `${baseUrl}/monument/${monument.kebabId}`,
+  // Dynamic continent region pages
+  const continentSlugs = Array.from(
+    new Set(
+      monuments
+        .map((m) => m.continent)
+        .filter((c): c is string => Boolean(c))
+    )
+  )
+    .map((c) => c.toLowerCase().replace(/ /g, '-'))
+    .sort()
+
+  const regionPages = continentSlugs.map((slug) => ({
+    url: `${baseUrl}/regions/${slug}`,
     lastModified: currentDate,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
   }))
 
-  return [...staticPages, ...monumentPages]
+  // Dynamic monument detail pages
+  const monumentPages = monuments
+    .filter((m) => Boolean(m.kebabId))
+    .map((monument) => ({
+      url: `${baseUrl}/monuments/${monument.kebabId}`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }))
+
+  return [...staticPages, ...regionPages, ...monumentPages]
 }

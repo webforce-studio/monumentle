@@ -14,7 +14,8 @@ declare global {
 
 export function BlockingCookieConsent() {
   const [consentGiven, setConsentGiven] = useState<boolean | null>(null)
-  const [showOverlay, setShowOverlay] = useState(true)
+  // Start hidden to avoid SSR white-screen; decide after hydration
+  const [showOverlay, setShowOverlay] = useState(false)
 
   useEffect(() => {
     // Check if consent was already given
@@ -22,8 +23,22 @@ export function BlockingCookieConsent() {
     if (consent === 'granted' || consent === 'denied') {
       setConsentGiven(consent === 'granted')
       setShowOverlay(false)
+    } else {
+      // Only show overlay after hydration if no choice stored
+      setShowOverlay(true)
     }
   }, [])
+
+  // Prevent background scroll while the overlay is visible
+  useEffect(() => {
+    if (showOverlay) {
+      const prev = document.body.style.overflow
+      document.body.style.overflow = 'hidden'
+      return () => {
+        document.body.style.overflow = prev
+      }
+    }
+  }, [showOverlay])
 
   const handleAccept = () => {
     localStorage.setItem('monumentle-cookie-consent', 'granted')
@@ -117,19 +132,6 @@ export function BlockingCookieConsent() {
             </p>
           </div>
         </div>
-        
-        {/* Prevent scrolling and interaction */}
-        <style jsx global>{`
-          body {
-            overflow: hidden;
-          }
-          body > *:not(.consent-overlay) {
-            pointer-events: none;
-          }
-          .consent-overlay {
-            pointer-events: auto;
-          }
-        `}</style>
       </>
     )
   }

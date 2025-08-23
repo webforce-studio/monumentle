@@ -13,18 +13,38 @@ export function Header({
   showHowToPlay,
   setShowHowToPlay,
 }: {
-  darkMode: boolean
-  toggleDarkMode: () => void
-  showStats: boolean
-  setShowStats: (show: boolean) => void
-  showHowToPlay: boolean
-  setShowHowToPlay: (show: boolean) => void
+  darkMode?: boolean
+  toggleDarkMode?: () => void
+  showStats?: boolean
+  setShowStats?: (show: boolean) => void
+  showHowToPlay?: boolean
+  setShowHowToPlay?: (show: boolean) => void
 }) {
   const [mounted, setMounted] = useState(false)
+  const [localDark, setLocalDark] = useState(false)
+  const [localShowStats, setLocalShowStats] = useState(false)
+  const [localShowHowToPlay, setLocalShowHowToPlay] = useState(false)
 
   useEffect(() => {
     setMounted(true)
   }, [])
+
+  const effectiveDark = darkMode ?? localDark
+  const handleToggleDark = toggleDarkMode ?? (() => {
+    setLocalDark((prev) => {
+      const next = !prev
+      if (typeof document !== 'undefined') {
+        document.documentElement.classList.toggle('dark', next)
+      }
+      return next
+    })
+  })
+
+  const effectiveShowStats = showStats ?? localShowStats
+  const handleSetShowStats = setShowStats ?? setLocalShowStats
+
+  const effectiveShowHowToPlay = showHowToPlay ?? localShowHowToPlay
+  const handleSetShowHowToPlay = setShowHowToPlay ?? setLocalShowHowToPlay
 
   return (
     <header className="bg-white dark:bg-gray-800 py-4 shadow-md">
@@ -42,22 +62,22 @@ export function Header({
 
         <div className="flex items-center gap-2">
           <button
-            onClick={() => setShowHowToPlay(!showHowToPlay)}
+            onClick={() => handleSetShowHowToPlay(!effectiveShowHowToPlay)}
             className="p-2 rounded-xl bg-amber-500 text-gray-50 hover:bg-amber-400 transition-colors"
           >
             <Calendar size={20} />
           </button>
           <button
-            onClick={() => setShowStats(!showStats)}
+            onClick={() => handleSetShowStats(!effectiveShowStats)}
             className="p-2 rounded-xl bg-amber-500 text-gray-50 hover:bg-amber-400 transition-colors"
           >
             <BarChart3 size={20} />
           </button>
           <button
-            onClick={toggleDarkMode}
+            onClick={handleToggleDark}
             className="p-2 rounded-xl bg-amber-500 text-gray-50 hover:bg-amber-400 transition-colors"
           >
-            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            {effectiveDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </div>
       </div>

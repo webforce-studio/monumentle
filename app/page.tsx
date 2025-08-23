@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Trophy, Share2, BarChart3, Flame, Zap, Crown, Star, Gem, MapPin, Facebook, Linkedin } from "lucide-react"
 import Image from "next/image"
-import { Header } from "@/components/header"
+import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { StructuredData } from "@/components/structured-data"
 import { XIcon } from "@/components/x-icon"
@@ -126,6 +126,7 @@ export default function Monumentle() {
     gamesWon: 0,
     currentStreak: 0,
     maxStreak: 0,
+    guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 },
     lastPlayedDate: "",
   })
   const [showStats, setShowStats] = useState(false)
@@ -271,7 +272,7 @@ export default function Monumentle() {
     const unrevealedBars = Array.from({ length: 24 }, (_, i) => i).filter((i) => !revealedSquares.includes(i))
 
     if (unrevealedBars.length > 0) {
-      const barsToReveal = []
+      const barsToReveal: number[] = []
       const availableBars = [...unrevealedBars]
 
       // Select 4 non-adjacent bars
@@ -590,7 +591,12 @@ Play at: ${url}`)
 
   if (!currentMonument) return <div>Loading...</div>
 
-  const calculateDistanceHint = (guessedMonument: MonumentData, targetMonument: MonumentData) => {
+  const detailHref = `/monuments/${(currentMonument as any).kebabId || currentMonument.id}`
+
+  const calculateDistanceHint = (
+    guessedMonument: MonumentData,
+    targetMonument: MonumentData,
+  ): { distance: number; direction: "closer" | "farther" | "exact"; proximity: number } => {
     const distance = calculateDistance(
       guessedMonument.latitude,
       guessedMonument.longitude,
@@ -598,7 +604,7 @@ Play at: ${url}`)
       targetMonument.longitude,
     )
 
-    const direction = distance === 0 ? "exact" : distance < 1000 ? "closer" : "farther"
+    const direction: "closer" | "farther" | "exact" = distance === 0 ? "exact" : distance < 1000 ? "closer" : "farther"
 
     // Calculate proximity (0-100%) based on distance (assume max 20,000km for global range)
     const maxDistance = 20000 // Maximum possible distance on Earth
@@ -657,15 +663,7 @@ Play at: ${url}`)
         </p>
       </div>
 
-      {/* Header Component */}
-      <Header
-        darkMode={darkMode}
-        toggleDarkMode={toggleDarkMode}
-        showStats={showStats}
-        setShowStats={setShowStats}
-        showHowToPlay={showHowToPlay}
-        setShowHowToPlay={setShowHowToPlay}
-      />
+      {/* Header is rendered globally in layout */}
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-8">
@@ -922,11 +920,20 @@ Play at: ${url}`)
                             `This iconic landmark continues to inspire visitors from around the world with its historical significance.`,
                           ]
 
-                          return monumentExplanation.map((line, index) => (
-                            <p key={index} className="leading-relaxed">
-                              {line}
-                            </p>
-                          ))
+                          return (
+                            <>
+                              {monumentExplanation.map((line, index) => (
+                                <p key={index} className="leading-relaxed">
+                                  {line}
+                                </p>
+                              ))}
+                              <div className="mt-3">
+                                <Link href={detailHref} className="inline-flex items-center text-amber-500 hover:underline font-medium">
+                                  Read more →
+                                </Link>
+                              </div>
+                            </>
+                          )
                         })()}
                       </div>
                     </div>
@@ -955,7 +962,7 @@ Play at: ${url}`)
                     <div className="space-y-4">
                       <h2 className="text-2xl font-bold text-red-600 dark:text-red-400 monument-font">Game Over</h2>
                       <p>
-                        The monument was: <strong>{currentMonument.name}</strong>
+                        The monument was: <Link href={detailHref} className="underline underline-offset-2"><strong>{currentMonument.name}</strong></Link>
                       </p>
                     </div>
                   )}
@@ -1261,71 +1268,59 @@ Play at: ${url}`)
                 </div>
               </div>
 
-              {/* Question 2 - Geography Learning */}
+              {/* Question 2 - Learning with games */}
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-xl">📚</span>
                   <div>
-                    <h3 className="font-semibold text-green-500 monument-heading">
-                      What geography skills will I develop?
-                    </h3>
+                    <h3 className="font-semibold text-green-500 monument-heading">What's the best way to learn geography with games?</h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      Our interactive geography game teaches world map knowledge, cultural geography, landmark locations, distance
-                      estimation, and continental awareness. You'll master famous landmarks from all 7 continents while
-                      learning about architectural styles, historical periods, and global cultural heritage.
+                      Use short daily sessions with active recall and spaced repetition. Mix map quizzes, landmark identification,
+                      and region drills (e.g., Europe, Asia) to build a mental map fast. Consistency beats cramming—5–10 minutes
+                      a day outperforms long, infrequent sessions.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Question 3 - Educational Benefits */}
+              {/* Question 3 - Memorizing countries & capitals */}
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-xl">🎓</span>
                   <div>
-                    <h3 className="font-semibold text-blue-500 monument-heading">
-                      Is this suitable for modern geography education?
-                    </h3>
+                    <h3 className="font-semibold text-blue-500 monument-heading">How can I memorize countries and capitals quickly?</h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      Monumentle is perfect for students, teachers, and anyone interested in world geography. It
-                      combines gamified learning with cultural education, making it ideal for geography classes,
-                      homeschooling, or personal knowledge building about world heritage sites in 2025.
+                      Chunk by continent, use mnemonics and associations, and self‑test with timed quizzes. Rotate easy/medium/hard
+                      sets and review misses using spaced repetition. Flashcards plus map/flag practice accelerates recall.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Question 4 - Landmark Coverage */}
+              {/* Question 4 - Europe landmarks */}
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-xl">🏛️</span>
                   <div>
-                    <h3 className="font-semibold text-purple-500 monument-heading">
-                      Which famous landmarks are included?
-                    </h3>
+                    <h3 className="font-semibold text-purple-500 monument-heading">What are the most famous landmarks in Europe?</h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      Our database features 150+ world-famous man-made monuments including the Eiffel Tower, Great
-                      Pyramid of Giza, Statue of Liberty, Taj Mahal, Colosseum, Great Wall of China, Machu Picchu,
-                      Sydney Opera House, and other historic architectural achievements. We focus on culturally
-                      significant structures built by humans, excluding natural phenomena and avoiding politically
-                      sensitive sites to maintain the educational focus on global heritage.
+                      Frequently searched and visited: Eiffel Tower, Colosseum, Acropolis/Parthenon, Stonehenge, Sagrada Família,
+                      Leaning Tower of Pisa, Brandenburg Gate, and the Louvre. See our Europe page for summaries and maps.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Question 5 - Distance Learning */}
+              {/* Question 5 - What is a monument */}
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-xl">📏</span>
                   <div>
-                    <h3 className="font-semibold text-orange-500 monument-heading">
-                      How do distance hints help with geography learning?
-                    </h3>
+                    <h3 className="font-semibold text-orange-500 monument-heading">What is a monument?</h3>
                     <p className={`text-sm mt-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
-                      Distance hints show how far your guess is from the target monument in kilometers, helping you
-                      understand global geography and spatial relationships. This teaches you about continental
-                      distances, country proximity, and helps develop better world map mental models through interactive learning.
+                      A human‑made structure commemorating a person, event, idea, or cultural heritage—such as statues, memorials,
+                      historic buildings, and ancient sites. Many are UNESCO World Heritage Sites preserved for their universal
+                      value.
                     </p>
                   </div>
                 </div>
@@ -1436,6 +1431,55 @@ Play at: ${url}`)
           </CardContent>
         </Card>
 
+        {/* Regional Monuments CTA (above More Games) */}
+        <Card
+          className={`mt-8 transition-colors duration-300 ${
+            darkMode ? "bg-slate-800 border-slate-700" : "bg-white border-amber-200"
+          }`}
+        >
+          <CardContent className="p-8">
+            <div className="mt-0">
+              <h2 className="text-2xl font-extrabold mb-2 text-white">Explore regional monuments</h2>
+              <p className="text-slate-300 mb-4 max-w-3xl">
+                Browse monuments by region. Each page lists iconic sites and will include short histories and links to
+                detailed pages. Coming soon
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link href="/regions/europe">
+                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 group rounded-full border-0 bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-sm hover:shadow-md hover:from-blue-500 hover:to-indigo-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe w-4 h-4 mr-2 opacity-90 group-hover:scale-110 transition-transform"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    Europe Monuments
+                  </button>
+                </Link>
+                <Link href="/regions/asia">
+                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 group rounded-full border-0 bg-gradient-to-r from-rose-600 to-orange-600 text-white shadow-sm hover:shadow-md hover:from-rose-500 hover:to-orange-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe w-4 h-4 mr-2 opacity-90 group-hover:scale-110 transition-transform"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    Asia Monuments
+                  </button>
+                </Link>
+                <Link href="/regions/africa">
+                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 group rounded-full border-0 bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-sm hover:shadow-md hover:from-emerald-500 hover:to-teal-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe w-4 h-4 mr-2 opacity-90 group-hover:scale-110 transition-transform"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    Africa Monuments
+                  </button>
+                </Link>
+                <Link href="/regions/americas">
+                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 group rounded-full border-0 bg-gradient-to-r from-sky-600 to-cyan-600 text-white shadow-sm hover:shadow-md hover:from-sky-500 hover:to-cyan-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe w-4 h-4 mr-2 opacity-90 group-hover:scale-110 transition-transform"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    Americas Monuments
+                  </button>
+                </Link>
+                <Link href="/regions/oceania">
+                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 group rounded-full border-0 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white shadow-sm hover:shadow-md hover:from-purple-500 hover:to-fuchsia-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe w-4 h-4 mr-2 opacity-90 group-hover:scale-110 transition-transform"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    Oceania Monuments
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* More Games Section */}
         <Card
           className={`mt-8 mb-12 transition-colors duration-300 ${
@@ -1454,8 +1498,8 @@ Play at: ${url}`)
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Flag Guesser */}
-              <a href="https://www.flagguesser.fun" target="_blank" rel="noopener noreferrer" className="block group">
+              {/* Flaggle */}
+              <a href="https://www.flaggle.fun" target="_blank" rel="noopener noreferrer" className="block group">
                 <div
                   className={`h-full rounded-xl overflow-hidden border-2 transition-all duration-300 ${
                     darkMode
@@ -1468,7 +1512,7 @@ Play at: ${url}`)
                       <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-3">
                         <span className="text-2xl">🏳️</span>
                       </div>
-                      <h3 className="text-2xl font-bold text-blue-500">Flag Guesser</h3>
+                      <h3 className="text-2xl font-bold text-blue-500">Flaggle</h3>
                     </div>
                     <div className={`text-center mb-4 ${darkMode ? "text-slate-300" : "text-slate-700"}`}>
                       <p>Test your world flag knowledge! Guess the country from its flag in this daily challenge.</p>
@@ -1560,6 +1604,7 @@ Play at: ${url}`)
             </div>
           </CardContent>
         </Card>
+
       </div>
 
       {/* Stats Modal */}
@@ -1770,7 +1815,7 @@ Play at: ${url}`)
               </div>
 
               <div className="space-y-3">
-                {navigator.share && (
+                {typeof navigator !== "undefined" && typeof (navigator as any).share === "function" && (
                   <Button
                     onClick={() => shareToSocial("native")}
                     className="w-full bg-amber-500 hover:bg-amber-600 text-white flex items-center justify-center gap-2"

@@ -1,5 +1,6 @@
 // This is a new file to check how monuments are displayed in cards
 import Image from "next/image"
+import Link from "next/link"
 import { MonumentAttribution } from "./monument-attribution"
 import type { Monument } from "@/lib/monument-database"
 
@@ -8,8 +9,9 @@ interface MonumentCardProps {
 }
 
 export function MonumentCard({ monument }: MonumentCardProps) {
+  const href = `/monuments/${monument.kebabId || String(monument.id)}`
   return (
-    <div className="rounded-lg overflow-hidden shadow-md">
+    <Link href={href} className="block rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
       <div className="relative h-48">
         <Image
           src={monument.images.medium.jpg || "/placeholder.svg"}
@@ -29,6 +31,6 @@ export function MonumentCard({ monument }: MonumentCardProps) {
           imageSource={monument.attribution.source}
         />
       </div>
-    </div>
+    </Link>
   )
 }

@@ -19,28 +19,33 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Game Links */}
+          {/* Regional Monuments */}
           <div>
-            <h4 className="font-semibold text-amber-400 mb-4">Game</h4>
+            <h4 className="font-semibold text-amber-400 mb-4">Regional Monuments</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-amber-400 transition-colors">
-                  Play Today
+                <Link href="/regions/europe" className="hover:text-amber-400 transition-colors">
+                  Europe Monuments
                 </Link>
               </li>
               <li>
-                <Link href="/how-to-play" className="hover:text-amber-400 transition-colors">
-                  How to Play
+                <Link href="/regions/africa" className="hover:text-amber-400 transition-colors">
+                  Africa Monuments
                 </Link>
               </li>
               <li>
-                <Link href="/geography-quiz" className="hover:text-amber-400 transition-colors">
-                  Geography Quiz
+                <Link href="/regions/asia" className="hover:text-amber-400 transition-colors">
+                  Asia Monuments
                 </Link>
               </li>
               <li>
-                <Link href="/famous-landmarks" className="hover:text-amber-400 transition-colors">
-                  Famous Landmarks
+                <Link href="/regions/americas" className="hover:text-amber-400 transition-colors">
+                  Americas Monuments
+                </Link>
+              </li>
+              <li>
+                <Link href="/regions/oceania" className="hover:text-amber-400 transition-colors">
+                  Oceania Monuments
                 </Link>
               </li>
             </ul>
@@ -62,12 +67,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.flagguesser.fun"
+                  href="https://www.flaggle.fun"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-amber-400 transition-colors"
                 >
-                  Flag Guesser 🏳️
+                  Flaggle 🏳️
                 </a>
               </li>
               <li>
