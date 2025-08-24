@@ -1,4 +1,8 @@
 import type { MetadataRoute } from "next"
+
+// Ensure a stable, cache-friendly sitemap for crawlers
+export const dynamic = "force-static"
+export const revalidate = 86400 // 24h
 import { monuments } from "@/lib/monument-database"
 
 export default function sitemap(): MetadataRoute.Sitemap {
